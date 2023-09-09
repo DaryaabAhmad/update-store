@@ -1,0 +1,253 @@
+.form {
+    // background-color :$color-form;
+    background: rgba($color-white, .9);
+    padding: 2rem;
+    transition: all .2s;
+    // width: 90%;
+    margin: 5rem 2rem;
+    height: 40rem;
+    width: 40rem;
+    box-shadow: 0 1rem 1rem rgba($color-white, .1);
+
+    transform: rotate(-1.5deg);
+    animation: moveInForm 2s ease;
+
+    // transform: translate(-50%, -50%) scale(1.1);
+    // transition: all .5s .2s;
+
+
+    &__group:not(:last-child) {
+        margin-bottom: 0;
+        margin-left: 3rem;
+        // transition: all .2s;
+
+        // &:hover {
+        //     transform: skewY(0deg) skewX(0deg) scale(1.01);
+        //     text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+        // }
+
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: $color-white;
+        padding: 1.5% 6%;
+        border-radius: .7rem;
+        background-color: rgba($color-black, .75);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-grey-light-1;
+            transform: skewY(0deg) skewX(0deg) scale(1.08);
+            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primary-dark;
+            transform: skewY(0deg) skewX(0deg) scale(1.08);
+            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-light-2;
+            transform: skewY(0deg) skewX(0deg) scale(1.08);
+            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+
+        }
+
+    }
+
+
+    &__label {
+
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+        color: $color-white;
+    }
+
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+        color: $color-white;
+
+
+    }
+
+
+
+    // radio
+
+    &__radio-group {
+        width: 49%;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        font-size: 1.3rem;
+        cursor: pointer;
+        position: relative;
+        // padding-left: 2.5rem;
+        padding: 0 2.5rem;
+        color: red;
+        margin-bottom: 1rem;
+
+        // display: flex;
+        // justify-content: space-evenly;
+    }
+
+    &__radio-button {
+        height: 1.7rem;
+        width: 1.7rem;
+        border: .3rem solid $color-white;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        // top: -.4rem;
+
+        &::after {
+            content: "";
+            display: block;
+            // height: 1rem;
+            height: .7rem;
+            width: .7rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-white;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+    }
+
+    &__radio-input:checked~&__radio-label &__radio-button::after {
+        opacity: 1;
+
+    }
+
+
+
+    //form registration
+    /*
+    &__groupp:not(:last-child) {
+        margin-bottom: 0.2rem;
+        transition: all .2s;
+        margin-left: 2rem;
+
+
+        // &:hover {
+        //     transform: skewY(0deg) skewX(0deg) scale(1.01);
+        //     text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+        // }
+
+    }
+
+    &__inputt {
+        font-size: 1rem;
+        font-family: inherit;
+        color: $color-grey-light-1;
+        padding: 1rem 3rem;
+        border-radius: .7rem;
+        background-color: rgba($color-black, .55);
+        border: none;
+        border-bottom: 2px solid transparent;
+        width: 65%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 2px solid $color-grey-light-1;
+            transform: skewY(0deg) skewX(0deg) scale(1.02);
+            text-shadow: 0.5rem 1rem 2rem rgb(255, 255, 255);
+
+        }
+
+        &:focus:invalid {
+            border-bottom: 2px solid $color-primary-dark;
+            transform: skewY(0deg) skewX(0deg) scale(1.02);
+            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+        }
+
+        &::-webkit-inputt-placeholder {
+            color: $color-grey-light-2;
+            transform: skewY(0deg) skewX(0deg) scale(1.02);
+            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+
+        }
+    }
+
+    &__labell {
+
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-top: 0rem;
+        margin-bottom: .5rem;
+        display: block;
+        transition: all .3s;
+        color: $color-black;
+        height: 1rem;
+    }
+
+    &__inputt:placeholder-shown+&__labell {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+        color: $color-white;
+
+
+    }*/
+}
+
+.l {
+    // background-color: red ;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    // color: white;
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: $color-white;
+            background-color: $color-grey-dark-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: #6f7cf1;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+}

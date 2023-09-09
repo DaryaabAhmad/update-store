@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>**MaNgo Marketplace</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <!--    <link rel="stylesheet" href="./CSS-Codes/icon-font.css"> -->
+
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <link rel="shortcut icon" href="img/favicon-1.jpeg">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header__fix">
+            <h1 id="go-to-main" class="heading">
+                <p class="bold-to-normal">MaNgo
+                    Marketplace</p>
+            </h1>
+            <header class="header">
+                <div class="user-nav user-nav__user">
+                    <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Ahmad</span>
+                </div>
+                <!-- <img src="img/logo.jpg" alt="logo" class="logo"> -->
+
+                <nav class=" sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item__1 side-nav__item--active">
+                            <a href="#login" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                                </svg>
+                                <span>Login here</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item side-nav__item__2">
+                            <a href="/Registration.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-registration"></use>
+                                </svg>
+                                <span>Registration</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item side-nav__item__3">
+                            <a href="/Product.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-product"></use>
+                                </svg>
+                                <span>ProductS</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item side-nav__item__4">
+                            <a href="./Contact.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-contact"></use>
+                                </svg>
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="legal">
+                        &copy; 2023 by <a href="#" class="l__link">Ahmad</a> All rights reserved.
+                    </div> -->
+                </nav>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">37+</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <span class="user-nav__notification">5+</span>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="content">
+
+
+            <!-- contact Section Popup -->
+
+            <div class="popup popup__1 " id="login">
+                <div class="popup__content ">
+                    <div>
+                        <div class="home-page__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium  ">
+                                    <h1 class="heading-login">Login</h1>
+                                </div>
+
+                                <div class="form__group">
+                                    <input id="login-here" type="text" class="form__input" placeholder="Full Name">
+                                    <label for="name" class="form__label">User Name</label>
+                                </div>
+                                <!-- <div class="form__group">
+                                        <input type="email" class="form__input" placeholder="Email address" id="email"
+                                            required>
+                                        <label for="email" class="form__label">Email address</label>
+                                    </div> -->
+                                <div class="form__group">
+                                    <input type="password" class="form__input" placeholder="Your Password"
+                                        id="password">
+                                    <label for="password" class="form__label">Password</label>
+                                </div>
+                                <div>
+                                    <p>Forgot Password?</p>
+                                </div>
+                                <div class="form__group">
+                                    <button href="go-to-main" class="btn btn--login">Login &rarr; </button>
+                                </div>
+                                <div class="l-1">
+                                    <!-- l-1 label in _popup.scss at last. no working, remove-->
+                                    <strong> Don't have an account? <a href="/Registration.html" >Register</a> </strong>
+                                </div>
+                                
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div>
+                <section class="section-login">
+                    <div class="page-view">
+                        <div class="home-page">
+                            <div class="home-page__form">
+                                <form class="form ">
+                                    <div class="  u-margin-bottom-medium  ">
+                                        <h1 id="contact" class="heading-login bold-to-normal">Contact Details</h1>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" placeholder="User Name" id="name">
+                                        <label for="name" class="form__label">User Name</label>
+
+                                        <input type="email" class="form__input" placeholder="Email address" id="email"
+                                            required>
+                                        <label for="email" class="form__label">Email address</label>
+
+                                        <input type="password" class="form__input" placeholder="Your Password"
+                                            id="password" required>
+                                        <label for="password" class="form__label">Password</label>
+
+                                        <div class=" form__group form__radio-group">
+                                            <input type="radio" class="form__radio-input" id="small" name="size">
+                                            <label for="small" class="form__radio-label">
+                                                <span class="form__radio-button"></span>
+                                                Male</label>
+
+                                            <input type="radio" class="form__radio-input" id="large" name="size">
+                                            <label for="large" class="form__radio-label">
+                                                <span class="form__radio-button"></span>
+                                                Female</label>
+                                        </div>
+
+                                        <input type="text" class="form__input" placeholder="Mobile Number" id="name">
+                                        <label for="name" class="form__label">Mobile Number</label>
+
+                                        <input type="text" class="form__input" placeholder="Telephone Number" id="name">
+                                        <label for="name" class="form__label">Telephone Number</label>
+
+                                        <input required type="url" class="form__input"
+                                            placeholder="Please enter your Web Site address:" id="name">
+                                        <label for="name" class="form__label">Your Web address</label>
+
+                                        <button href="#go-to-main" class=" btn  btn--login">Submit &rarr;
+                                        </button>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+             </div>-->
+
+            <!--  
+                        <button class="btn-inline">Show all <span>&rarr;</span></button>
+                    </div>
+
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 4 free rooms for your selected dates!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Book now</span>
+                            <span class="btn__invisible">Only 4 rooms left</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+               </main> 
+                </div> -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
