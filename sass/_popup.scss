@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba($color-black, .9);
+    background: rgba($color-black, .955);
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -26,8 +26,8 @@
         margin: 10% auto;
         height: 50rem;
         width: 40rem;
-        background-color: rgba($color-black, .4);
-        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        background-color: $color-white;
+        box-shadow: -0.2rem 1rem 1rem 0 $color-white;
         display: table;
         overflow: hidden;
         opacity: 0;
@@ -46,7 +46,7 @@
     &:target &__content {
         opacity: 1;
         transform: translate(0%, 30%) scale(1);
-        transform: rotate(1.5deg);
+        transform: rotate(3deg);
     }
 
     &__close {

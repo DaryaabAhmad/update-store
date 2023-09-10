@@ -7,9 +7,9 @@
     margin: 5rem 2rem;
     height: 40rem;
     width: 40rem;
-    box-shadow: 0 1rem 1rem rgba($color-white, .1);
+    box-shadow: inset 0 0 1rem $color-black;
 
-    transform: rotate(-1.5deg);
+    transform: rotate(-3deg);
     // animation: moveInForm .1s ease;
     transition: all .1s;
 
@@ -37,7 +37,7 @@
         // background-color: rgba($color-black, .85);
         border: none;
         border-bottom: 3px solid transparent;
-        box-shadow: 0.5rem .5rem .7rem -.5rem black;
+        box-shadow: 0.5rem .5rem 3rem  $color-black;
         width: 100%;
         display: block;
         transition: all .3s;
