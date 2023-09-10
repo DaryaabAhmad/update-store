@@ -12,7 +12,7 @@ $color-page: #ffffff;
 
 
 $color-primary-dark: #6e3efc;
-$color-primary-dark-3: #130342;
+$color-primary-dark-3: #090122;
 
 // $color-primary-gradiant-1: #282828;
 // $color-primary-gradiant-2: #101d2c;
@@ -52,7 +52,7 @@ $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 $color-grey-dark-1: #333;
 
-$color-gradiant: #101d2c;
+$color-gradiant:#101d2c;
 
 :root {
     // --color-primary: #eb2f64;
@@ -64,7 +64,7 @@ $color-gradiant: #101d2c;
     --color-grey-light-3: #f0eeee;
     --color-grey-light-4: #ccc;
 
-
+   
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
 
@@ -76,17 +76,19 @@ $color-gradiant: #101d2c;
 
 
 //  Real
-$bp-largest: 75em; // 1200px large screen
-$bp-large: 68.75em; // 1100px  Laptop
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
-$bp-mediumm: 46.875em; // 750px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
-$bp-smallestt: 25em; // 400px
 
 
-
-
+/* to test - changed*/ 
+// $bp-largest: 112.5em; // 1200px
+// $bp-large: 93.75em; // 1500px
+// $bp-medium: 75em; // 1200px
+// $bp-small: 37.5em; // 600px
+// $bp-smallest: 31.25em; // 500px
 
 * {
     margin: 0;
@@ -107,32 +109,7 @@ html {
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;
     }
-
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 40%;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 35%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        font-size: 30%;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 25%;
-    }
-
-    @media only screen and (max-width: $bp-smallestt) {
-        font-size: 20%;
-    }
-
-    // @media only screen and (min-width: $bp-smallest) {
-    //     font-size: 15%;
-    // }
 }
-
 
 body {
     font-family: 'Open Sans', sans-serif;

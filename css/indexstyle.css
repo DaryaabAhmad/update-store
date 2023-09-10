@@ -9,6 +9,7 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
   --line: 1px solid var(--color-grey-light-2); }
 
+/* to test - changed*/
 * {
   margin: 0;
   padding: 0; }
@@ -25,21 +26,6 @@ html {
   @media only screen and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 40%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 35%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 30%; } }
-  @media only screen and (max-width: 31.25em) {
-    html {
-      font-size: 25%; } }
-  @media only screen and (max-width: 25em) {
-    html {
-      font-size: 20%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -58,13 +44,12 @@ body {
 .heading {
   text-align: center;
   background: rgba(105, 94, 94, 0.45);
-  height: 3.5rem;
+  height: 4.5rem;
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-style: italic;
-  padding: 1rem 0;
-  align-items: center;
-  justify-content: space-between; }
+  padding: 1rem;
+  margin: 0 auto; }
   .heading-login {
     text-align: center;
     font-style: italic;
@@ -72,7 +57,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to left, #6e3efc, #130342);
+    background-image: linear-gradient(to left, #6e3efc, #090122);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
@@ -88,7 +73,8 @@ body {
   background: white;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  box-shadow: inset 0px -0.5px 2px 0px #000; }
   .header__fix {
     position: fixed;
     width: 100%;
