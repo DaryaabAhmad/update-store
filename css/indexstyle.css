@@ -171,7 +171,7 @@ body {
   .sub-header__icon {
     width: 1.75rem;
     height: 1.75rem;
-    margin: 0 auto;
+    margin: 0 .5rem;
     fill: #240090; }
   .sub-header__icon:hover, .sub-header__link:hover {
     transform: translateY(2px);
@@ -376,6 +376,11 @@ body {
 
 
     }*/ }
+  .form__r {
+    margin: 0 auto;
+    transform: rotate(0deg);
+    height: auto;
+    width: 60%; }
   .form__group:not(:last-child) {
     margin: 0 1.5rem; }
   .form__input {
