@@ -10,15 +10,15 @@
     box-shadow: 0 1rem 1rem rgba($color-white, .1);
 
     transform: rotate(-1.5deg);
-    animation: moveInForm 2s ease;
+    // animation: moveInForm .1s ease;
+    transition: all .1s;
 
     // transform: translate(-50%, -50%) scale(1.1);
     // transition: all .5s .2s;
 
 
     &__group:not(:last-child) {
-        margin-bottom: 0;
-        margin-left: 3rem;
+        margin: 0 1.5rem;
         // transition: all .2s;
 
         // &:hover {
@@ -31,33 +31,34 @@
     &__input {
         font-size: 1.5rem;
         font-family: inherit;
-        color: $color-white;
-        padding: 1.5% 6%;
+        // color: $color-white;
+        padding: 2% 7%;
         border-radius: .7rem;
-        background-color: rgba($color-black, .75);
+        // background-color: rgba($color-black, .85);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 90%;
+        box-shadow: 0.5rem .5rem .7rem -.5rem black;
+        width: 100%;
         display: block;
         transition: all .3s;
 
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-grey-light-1;
-            transform: skewY(0deg) skewX(0deg) scale(1.08);
+            border-bottom: 3px solid $color-secondary;
+            transform: skewY(0deg) skewX(0deg) scale(1.02);
             text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
 
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $color-primary-dark;
+            border-bottom: 3px solid $color-primary;
             transform: skewY(0deg) skewX(0deg) scale(1.08);
             text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
         }
 
         &::-webkit-input-placeholder {
-            color: $color-grey-light-2;
+            color: $color-heading;
             transform: skewY(0deg) skewX(0deg) scale(1.08);
             text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
 
@@ -74,7 +75,7 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
-        color: $color-white;
+        color: $color-heading;
     }
 
     &__input:placeholder-shown+&__label {
@@ -82,12 +83,10 @@
         visibility: hidden;
         transform: translateY(-4rem);
         color: $color-white;
-
-
     }
 
 
-
+    /*
     // radio
 
     &__radio-group {
@@ -146,7 +145,7 @@
     &__radio-input:checked~&__radio-label &__radio-button::after {
         opacity: 1;
 
-    }
+    }*/
 
 
 
@@ -224,6 +223,7 @@
     }*/
 }
 
+/*
 .l {
     // background-color: red ;
     padding: 10rem 0;
@@ -250,4 +250,4 @@
         }
     }
 
-}
+}*/
