@@ -7,6 +7,8 @@
 //  4 5 17 20 22 25
 // rgba(105, 94, 94, 0.3)
 $color-heading: #695e5e;
+$color-heading-main: #f9f9f9;
+
 // $color-page: #191919;
 $color-page: #ffffff;
 
@@ -52,7 +54,7 @@ $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 $color-grey-dark-1: #333;
 
-$color-gradiant:#101d2c;
+$color-gradiant: #101d2c;
 
 :root {
     // --color-primary: #eb2f64;
@@ -64,7 +66,7 @@ $color-gradiant:#101d2c;
     --color-grey-light-3: #f0eeee;
     --color-grey-light-4: #ccc;
 
-   
+
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
 
@@ -83,7 +85,7 @@ $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
 
-/* to test - changed*/ 
+/* to test - changed*/
 // $bp-largest: 112.5em; // 1200px
 // $bp-large: 93.75em; // 1500px
 // $bp-medium: 75em; // 1200px
@@ -121,4 +123,5 @@ body {
     background-repeat: no-repeat;
 
     min-height: 100vh;
+    scroll-behavior: smooth;
 }

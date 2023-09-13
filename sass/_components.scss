@@ -1,0 +1,24 @@
+
+.content {
+    display: flex;
+    background-image: url(../img/hotel-2.jpg);
+    background: transparent;
+    // height: 120vh;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10.54rem;
+    // background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+    // &__page{
+    // background-image: linear-gradient(to right bottom, rgba(40, 40, 40, 0.801), $color-gradiant);
+
+    // }
+}
+.section-login {
+    margin: 4rem auto;
+    width: 60%;
+}

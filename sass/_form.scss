@@ -6,7 +6,7 @@
     // width: 90%;
     margin: 5rem 2rem;
     height: 40rem;
-    width: 40rem;
+    width: 45rem;
     box-shadow: inset 0 0 1rem $color-black;
 
     transform: rotate(-3deg);
@@ -19,7 +19,7 @@
         margin: 0 auto;
         transform: rotate(0deg);
         height: auto;
-        width: 60%;
+        width: auto;
         // padding: 0;
 
     }
@@ -60,7 +60,7 @@
 
         &:focus:invalid {
             border-bottom: 3px solid $color-primary;
-            transform: skewY(0deg) skewX(0deg) scale(1.08);
+            transform: skewY(0deg) skewX(0deg) scale(1.05);
             text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
         }
 
@@ -258,11 +258,3 @@
     }
 
 }*/
-
-.section-login{
-    // margin-top: -5rem;
-    // padding-top: 15rem;
-}
-.content{
-    // margin-top: -4rem;
-}
