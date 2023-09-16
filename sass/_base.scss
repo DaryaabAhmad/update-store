@@ -111,6 +111,18 @@ html {
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        font-size: 32%;
+    }
 }
 
 body {
@@ -123,5 +135,5 @@ body {
     background-repeat: no-repeat;
 
     min-height: 100vh;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }

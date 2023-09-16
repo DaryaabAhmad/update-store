@@ -20,10 +20,10 @@
 <body>
     <div class="container">
         <div class="header__fix">
-            <h1 id="go-to-main" class="heading">
+            <!-- <h1 id="go-to-main" class="heading">
                 <p class="bold-to-normal">MaNgo
                     Marketplace</p>
-            </h1>
+            </h1> -->
             <header class="header">
                 <div class="user-nav user-nav__user">
                     <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
@@ -96,105 +96,115 @@
                         </svg>
                         <span class="user-nav__notification">5+</span>
                     </div>
+                    <div class="navigation">
+                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                        <label for="navi-toggle" class="navigation__button">
+                            <span class="navigation__icon"> &nbsp </span>
+                        </label>
+                        <div class="navigation__background">&nbsp;</div>
+                    </div>
                 </nav>
             </header>
         </div>
 
-        <!-- <div class="content"> -->
-        <!-- Popup -->
-        <div class="popup  " id="login">
-            <div class="popup__content ">
-                <div>
-                    <div class="home-page__form">
-                        <form action="#" class="form">
-                            <div class="u-margin-bottom-medium  ">
-                                <h1 class="heading-login">Login</h1>
-                            </div>
+        <div class="content">
+            <!-- contact Section Popup -->
 
-                            <div class="form__group">
-                                <input id="login-here" type="text" class="form__input" placeholder="Full Name">
-                                <label for="name" class="form__label">User Name</label>
-                            </div>
-                            <!-- <div class="form__group">
+            <div class="popup " id="login">
+                <div class="popup__content ">
+                    <div>
+                        <div class="home-page__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium  ">
+                                    <h1 class="heading-login">Login</h1>
+                                </div>
+
+                                <div class="form__group">
+                                    <input id="login-here" type="text" class="form__input" placeholder="Full Name">
+                                    <label for="name" class="form__label">User Name</label>
+                                </div>
+                                <!-- <div class="form__group">
                                         <input type="email" class="form__input" placeholder="Email address" id="email"
                                             required>
                                         <label for="email" class="form__label">Email address</label>
                                     </div> -->
-                            <div class="form__group">
-                                <input type="password" class="form__input" placeholder="Your Password" id="password">
-                                <label for="password" class="form__label">Password</label>
-                            </div>
-                            <div class="l-1__1">
-                                <a href="#">Forgot Password?</a>
-                            </div>
-                            <div class="form__group">
-                                <button href="go-to-main" class="btn">Login &rarr; </button>
-                            </div>
-                            <div class="l-1">
-                                <!-- l-1 label in _popup.scss at last.-->
-                                <strong> Don't have an account? <a href="/Registration.html">Register</a> </strong>
-                            </div>
-
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- registration page -->
-        <div class="content">
-            <section class="section-login">
-                <div class="page-view">
-                    <div class="home-page">
-                        <div class="home-page__form">
-
-                            <form class="form form__r">
-
                                 <div class="form__group">
-                                    <h1 class="heading-login  bold-to-normal">Register yourself here</h1>
-                                    <div class="l-1">
-                                        <strong> Already have an Account? <a href="#login">Login</a> </strong>
-                                    </div>
-                                    <h3 class="l-1"><em>Login Information</em></h3>
-
-                                    <input id="login-here" type="text" class="form__input" placeholder="Full Name"
-                                        id="name">
-                                    <label for="name" class="form__label">User Name</label>
-
-                                    <input type="email" class="form__input" placeholder="Email address" id="email"
-                                        required>
-                                    <label for="email" class="form__label">Email address</label>
-
-                                    <input type="password" class="form__input" placeholder="Your Password" id="password"
-                                        required>
+                                    <input type="password" class="form__input" placeholder="Your Password"
+                                        id="password">
                                     <label for="password" class="form__label">Password</label>
                                 </div>
-
-                                <div class="form__group">
-                                    <h3 class="l-1 l-2 "><em>Shipping Detail</em></h3>
-
-                                    <input id="login-here" type="type" class="form__input"
-                                        placeholder="Your Order will be Delivered on that Address" id="name">
-                                    <label for="name" class="form__label">Address</label>
-
-                                    <input id="login-here" type="type" class="form__input" placeholder="City" id="name">
-                                    <label for="name" class="form__label">City</label>
-
-                                    <input id="login-here" type="type" class="form__input" placeholder="Postal Code"
-                                        id="name">
-                                    <label for="name" class="form__label">Postal Code</label>
+                                <div class="l-1__1">
+                                    <a href="#">Forgot Password?</a>
                                 </div>
-                                <!-- remove btn--login -->
-                                <a href="./index.html" class="btn btn--login">Submit &rarr;</a>
-                                <!-- <div class="form__group">
+                                <div class="form__group">
                                     <button href="go-to-main" class="btn">Login &rarr; </button>
-                                </div> -->
+                                </div>
+                                <div class="l-1">
+                                    <!-- l-1 label in _popup.scss at last.-->
+                                    <strong> Don't have an account? <a href="/Registration.html">Register</a> </strong>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <main class="manu-page">
+                <!-- registration page -->
+                <div class="content">
+                    <section class="section-login">
+                        <div class="page-view">
+                            <div class="home-page">
+                                <div class="home-page__form">
+
+                                    <form class="form form__r">
+
+                                        <div class="form__group">
+                                            <h1 class="heading-login  bold-to-normal">Register yourself here</h1>
+                                            <div class="l-1">
+                                                <strong> Already have an Account? <a href="#login">Login</a> </strong>
+                                            </div>
+                                            <h3 class="l-1"><em>Login Information</em></h3>
+
+                                            <input id="login-here" type="text" class="form__input"
+                                                placeholder="Full Name" id="name">
+                                            <label for="name" class="form__label">User Name</label>
+
+                                            <input type="email" class="form__input" placeholder="Email address"
+                                                id="email" required>
+                                            <label for="email" class="form__label">Email address</label>
+
+                                            <input type="password" class="form__input" placeholder="Your Password"
+                                                id="password" required>
+                                            <label for="password" class="form__label">Password</label>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <h3 class="l-1 l-2 "><em>Shipping Detail</em></h3>
+
+                                            <input id="login-here" type="type" class="form__input"
+                                                placeholder="Your Order will be Delivered on that Address" id="name">
+                                            <label for="name" class="form__label">Address</label>
+
+                                            <input id="login-here" type="type" class="form__input" placeholder="City"
+                                                id="name">
+                                            <label for="name" class="form__label">City</label>
+
+                                            <input id="login-here" type="type" class="form__input"
+                                                placeholder="Postal Code" id="name">
+                                            <label for="name" class="form__label">Postal Code</label>
+                                        </div>
+                                        <!-- remove btn--login -->
+                                        <a href="./index.html" class="btn btn--login">Submit &rarr;</a>
+                                        <!-- <div class="form__group">
+                                    <button href="go-to-main" class="btn">Login &rarr; </button>
+                                </div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
         </div>
     </div>
 </body>

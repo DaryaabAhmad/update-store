@@ -15,6 +15,7 @@
     // font-weight: 100;
     padding: 1rem;
     margin: 0 auto;
+
     // align-items: center;
     // justify-content: space-between;
     // animation: moveInColor 2s ease-out;
@@ -68,6 +69,10 @@
 
     }
 
+    @media only screen and (width: $bp-large ) {
+        display: none;
+    }
+
 
 }
 
@@ -76,9 +81,9 @@
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: $bp-small) {
-        padding-right: 8rem;
-    }
+    // @media only screen and (max-width: $bp-small) {
+    //     padding-right: 8rem;
+    // }
 
 
     &>* {
