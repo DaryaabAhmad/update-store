@@ -173,7 +173,7 @@ body {
 .sub-header__item:not(:last-child) {
   margin-bottom: .5rem; }
 
-.sub-header__item::before {
+.sub-header__link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -184,7 +184,7 @@ body {
   transform: scaleY(0);
   transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
 
-.sub-header__item:hover::before {
+.sub-header__link:hover::before {
   transform: scaleY(1);
   width: 100%; }
 

@@ -193,7 +193,7 @@
         }
     }
 
-    &__item::before {
+    &__link::before {
         content: "";
         position: absolute;
         top: 0;
@@ -210,7 +210,7 @@
             background-color .1s;
     }
 
-    &__item:hover::before {
+    &__link:hover::before {
         transform: scaleY(1);
         width: 100%;
     }
