@@ -95,6 +95,21 @@ $bp-smallest: 31.25em; // 500px
 * {
     margin: 0;
     padding: 0;
+// 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: "Ubuntu", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+// 
 }
 
 *,
