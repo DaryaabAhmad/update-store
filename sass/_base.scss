@@ -95,7 +95,7 @@ $bp-smallest: 31.25em; // 500px
 * {
     margin: 0;
     padding: 0;
-// 
+
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -109,7 +109,8 @@ $bp-smallest: 31.25em; // 500px
     text-decoration: none;
     text-transform: capitalize;
     transition: all 0.2s linear;
-// 
+
+
 }
 
 *,
@@ -151,4 +152,8 @@ body {
 
     min-height: 100vh;
     // scroll-behavior: smooth;
+}
+.container{
+overflow: scroll ;
+overflow-x: hidden;
 }

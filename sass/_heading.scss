@@ -1,5 +1,5 @@
 .bold-to-normal {
-    animation: moveInHeadingg 2s ease-out;
+    animation: moveInHeadingg .8s ease-out;
     animation-delay: .2s;
     // mix-blend-mode: overlay;
 }
@@ -7,7 +7,7 @@
 .heading {
     text-align: center;
     background: $color-heading-main;
-    height: 4.5rem;
+    // height: 4.5rem;
     // color: $color-white;
     color: $color-black;
     font-size: 1.7rem;
@@ -62,7 +62,7 @@
     &__fix {
         list-style: none;
         font-size: 1.4rem;
-        position: fixed;
+        // position: fixed;
         width: 100%;
         // opacity: 999;
         overflow: hidden;
@@ -75,10 +75,14 @@
 
     }
 
-    @media only screen and (width: $bp-large ) {
-        display: none;
+    @media only screen and (max-width: $bp-small ) {
+        // display: none;
+        padding-right: 5%;
     }
-
+    // @media only screen and (width: $bp-smallest ) {
+    //     // display: none;
+    //     padding-right: 7%;
+    // }
 
 }
 
