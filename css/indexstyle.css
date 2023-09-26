@@ -1055,7 +1055,7 @@ body {
     .navigation__button {
       height: 4rem;
       width: 3.5rem;
-      border-radius: 50%;
+      border-radius: 1%;
       z-index: 2000;
       text-align: center;
       cursor: pointer;
@@ -1063,7 +1063,7 @@ body {
     .navigation__background {
       height: .0001rem;
       width: .00011rem;
-      border-radius: 50%;
+      border-radius: 1%;
       background: #202124;
       z-index: 9999;
       box-shadow: 0 1rem 3;
@@ -1073,12 +1073,12 @@ body {
       width: 1.5rem;
       height: 15rem;
       z-index: 99999;
-      border-radius: 50%; }
+      border-radius: 1%; }
     .navigation__checkbox:checked {
       opacity: 1;
       width: 1.5rem;
       height: 1.5rem;
-      border-radius: 50%; }
+      border-radius: 1%; }
     .navigation__icon {
       position: relative;
       margin-top: 2rem; }
