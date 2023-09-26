@@ -1061,8 +1061,8 @@ body {
       cursor: pointer;
       position: absolute; }
     .navigation__background {
-      height: .1rem;
-      width: .1rem;
+      height: .0001rem;
+      width: .00011rem;
       border-radius: 50%;
       background: #202124;
       z-index: 9999;
