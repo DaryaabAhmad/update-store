@@ -79,6 +79,7 @@
         // display: none;
         padding-right: 5%;
     }
+
     // @media only screen and (width: $bp-smallest ) {
     //     // display: none;
     //     padding-right: 7%;
@@ -108,6 +109,7 @@
     &>*:hover {
         fill: rgba($color-heading, .45);
         transform: translateY(1px);
+        transition: all .1s;
 
         // fill: $color-black;
         // translate: linre;
@@ -130,6 +132,7 @@
         // transform: scaleY(1);
         // width: 100%;
         outline: none;
+        transition: all .2s;
         transform: translateY(2px);
         width: 100%;
     }
@@ -216,6 +219,7 @@
 
     &__link:hover::before {
         transform: scaleY(1);
+        transition: all .2s;
         width: 100%;
     }
 
@@ -247,7 +251,8 @@
             margin: 0 .5rem;
             // margin-right: 2rem;
             fill: $color-heading;
-            &__1{
+
+            &__1 {
                 fill: $color-white;
             }
         }
@@ -256,6 +261,7 @@
     &__icon:hover,
     &__link:hover {
         transform: translateY(2px);
+        transition: all .2s;
         color: $color-black;
         // box-shadow: rgba(0, 0, 0, .3);
         font-weight: bold;

@@ -13,18 +13,11 @@
 * {
   margin: 0;
   padding: 0;
-  padding: 0px;
-  margin: 0px;
   box-sizing: border-box;
   font-family: 'Sedgwick Ave Display', cursive;
-  padding: 0px;
-  margin: 0px;
   outline: none;
   border: none;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear; }
+  text-decoration: none; }
 
 *,
 *::before,
@@ -144,7 +137,8 @@ body {
     fill: #240090; }
   .user-nav > *:hover {
     fill: rgba(105, 94, 94, 0.45);
-    transform: translateY(1px); }
+    transform: translateY(1px);
+    transition: all .1s; }
   .user-nav__icon-box {
     position: relative; }
   .user-nav__icon {
@@ -152,6 +146,7 @@ body {
     width: 4rem; }
   .user-nav__icon:hover::before {
     outline: none;
+    transition: all .2s;
     transform: translateY(2px);
     width: 100%; }
   .user-nav__notification {
@@ -208,6 +203,7 @@ body {
 
 .sub-header__link:hover::before {
   transform: scaleY(1);
+  transition: all .2s;
   width: 100%; }
 
 .sub-header__link:link, .sub-header__link:visited {
@@ -236,6 +232,7 @@ body {
 
 .sub-header__icon:hover, .sub-header__link:hover {
   transform: translateY(2px);
+  transition: all .2s;
   color: #000;
   font-weight: bold; }
 
