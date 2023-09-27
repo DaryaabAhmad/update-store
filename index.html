@@ -21,8 +21,7 @@
         <!-- Header main -->
         <div>
             <h1 id="go-to-main" class="heading">
-                <p class="bold-to-normal">MaNgo
-                    Marketplace</p>
+                <p class="bold-to-normal">MaNgo Marketplace</p>
             </h1>
         </div>
         <!-- navbar header -->
@@ -89,30 +88,6 @@
                     </svg>
                     <span class="user-nav__notification">5+</span>
                 </div>
-                <!-- <div class="navigation ">
-                    <input type="checkbox" class=" navigation__checkbox" id="navi-toggle">
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon"> &nbsp </span>
-                    </label>
-                    <div class="navigation__background">&nbsp;</div>
-                </div> -->
-                        <!-- <div class="web_row header_row">
-                            <div class="header_logo">
-                            </div>
-                            <nav class="navbarr">
-                                <i class="fas fa-times" id="close-btn"></i>
-                                <div class="header_icons-mobile">
-                                </div>
-
-                                <a href="#">sdfghjk</a>
-                                <a href="#">sdfghjk</a>
-                                <a href="#">sdfghjk</a>
-                                <a>sdfghjk</a>
-                                <a>sdfghjk</a>
-                                <a>sdfghjk</a>
-                            </nav>
-                            <i class="fas fa-bars" id="menu-btn"></i>
-                        </div> -->
             </nav>
         </div>
     </header>
@@ -123,6 +98,19 @@
                 <span class="navigation__icon"> &nbsp </span>
             </label>
             <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>
+                            home</a></li>
+                    <li class="navigation__item"><a href="#login" class="navigation__link"><span>02</span>Login</a></li>
+                    <li class="navigation__item"><a href="/Registration.html"
+                            class="navigation__link"><span>03</span>Registration</a></li>
+                    <li class="navigation__item"><a href="/Product.html"
+                            class="navigation__link"><span>04</span>Products</a></li>
+                    <li class="navigation__item"><a href="./Contact.html"
+                            class="navigation__link"><span>05</span>Contact US </a></li>
+                </ul>
+            </nav>
         </div>
         <div class="content">
             <!-- contact Section Popup -->
@@ -227,7 +215,7 @@
                     <!-- Product Pricing -->
                     <div class="product-price">
                         <span>148$</span>
-                        <a href="#" class="cart-btn">Add to cart
+                        <a href="#" class="btn btn-1">Add to cart
                             <svg class="sub-header__icon-contact">
                                 <use xlink:href="img/sprite.svg#icon-cart"></use>
                             </svg>
@@ -247,7 +235,7 @@
 
 
                 <!-- Right Column -->
-                <div class="right-column-1">
+                <div class=" right-column right-column__1">
 
                     <!-- Product Description -->
                     <div class="product-description">
@@ -298,8 +286,8 @@
                     <!-- Product Pricing -->
                     <div class="product-price-1">
                         <span>561$</span>
-                        <span> <del>650$ </del> </span>
-                        <a href="#" class="cart-btn">Add to cart
+                        <!-- <p> <del> 650$ </del> </p> -->
+                        <a href="#" class="btn btn-1">Add to cart
                             <svg class="sub-header__icon-contact">
                                 <use xlink:href="img/sprite.svg#icon-cart"></use>
                             </svg>
@@ -310,47 +298,6 @@
             </main>
         </div>
     </section>
-    <!-- <script>
-        // mobile/menu / sidebar
-        let sidebar = document.querySelector(".navbarr");
-        let menuBtn = document.querySelector("#menu-btn");
-        let closeBtn = document.querySelector("#close-btn");
-        let backdropELe = document.querySelector(".header-backdrop");
-    
-        menuBtn.addEventListener("click", () => {
-          sidebar.classList.add("sidebar-opened");
-          backdropELe.classList.add("backdrop-opened");
-        });
-        closeBtn.addEventListener("click", () => {
-          sidebar.classList.remove("sidebar-opened");
-          backdropELe.classList.remove("backdrop-opened");
-        });
-    
-        backdropELe.addEventListener("click", () => {
-          sidebar.classList.remove("sidebar-opened");
-          backdropELe.classList.remove("backdrop-opened");
-        });
-        // cart sidebar
-        let cartSidebar = document.querySelector(".cart-sidebar");
-    
-        let cartOpenBtn = document.querySelector("#cart-btn");
-    
-        let cartCloseBtn = document.querySelector("#cart-close");
-    
-        cartOpenBtn.addEventListener("click", () => {
-          cartSidebar.classList.add("opened");
-        });
-        cartCloseBtn.addEventListener("click", () => {
-          cartSidebar.classList.remove("opened");
-        });
-        // 
-        let searchOpenBtn = document.querySelector("#search-btn");
-        let searchForm1 = document.querySelector(".search-form");
-        searchOpenBtn.addEventListener("click", () => {
-          searchForm1.classList.toggle("opened");
-        });
-    
-      </script> -->
 </body>
 
 </html>

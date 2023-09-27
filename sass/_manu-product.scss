@@ -2,7 +2,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
-// position: relative;
+
+    // position: relative;
     // display: flex;
     @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
@@ -12,21 +13,23 @@
 
 .left-column {
     width: 65%;
-    position: relative;
+    // position: relative;
 
     &-1 {
         width: 65%;
-        position: relative;
+        // position: relative;
         margin-left: -50rem;
     }
 
     &__img {
-        width: 100%;
-        position: absolute;
-        left: 62%;
-        top: 0;
+        width: 50%;
+        // width: 50%;
+        // position: relative;
+        left: 55%;
+        top: 14%;
         opacity: 1;
         transition: all 0.3s ease;
+        margin-left: 100%;
 
         &:active {
             opacity: 1;
@@ -41,16 +44,23 @@
         // width: 50rem;
         // top: -5rem;
         @media only screen and (max-width: $bp-smallest) {
-            left: 130%;
+            margin-left: 100%;
+            margin-top: -15%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 100%;
+            margin-top: -10%;
         }
 
         &-1 {
-            height: 62rem;
-            width: 50rem;
-            margin-top: 10rem;
+            height: 42rem;
+            width: 28rem;
+            margin-top: 7rem;
+            margin-left: 83%;
 
-            @media only screen and (max-width: $bp-smallest) {
-                left: 75%;
+            @media only screen and (max-width: $bp-small) {
+                margin-top: 15rem;
             }
         }
 
@@ -66,25 +76,26 @@
 }
 
 .right-column {
-    width: 35%;
-    margin-top: 6rem;
+    width: 45%;
+    margin-top: -35%;
 
-    @media only screen and (max-width: $bp-small) {
-        margin-top: 1rem;
-        width: 80rem;
-        margin-top: 3rem;
+    // @media only screen and (max-width: $bp-small) {
+    //     margin-top: 1rem;
+    //     width: 80rem;
+    //     margin-top: 3rem;
 
-    }
+    // }
 
-    &-1 {
-        margin-top: 12rem;
-        width: 35%;
+    &__1 {
+        // margin-top: 12rem;
+        // width: 45%;
         margin-left: 50%;
 
         @media only screen and (max-width: $bp-small) {
-            margin-top: 1rem;
-            width: 80rem;
-            margin-top: 3rem;
+            //     margin-top: 1rem;
+            //     width: 80rem;
+            //     margin-top: 3rem;
+            margin-top: -75%;
 
         }
     }
@@ -206,7 +217,7 @@
     color: #358ED7;
     text-decoration: none;
     font-size: 12px;
-    position: relative;
+    // position: relative;
     margin: 10px 0;
     display: inline-block;
 }
@@ -252,27 +263,28 @@
     }
 }
 
-.product-price span {
-    font-size: 26px;
+.product-price,
+.product-price-1 span {
+    font-size: 2.6rem;
     font-weight: 300;
     color: #43474D;
     margin-right: 20px;
 }
 
-.cart-btn {
-    display: inline-block;
-    background-color: #7DC855;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 12px 30px;
-    transition: all .5s;
-}
+// .cart-btn {
+//     display: inline-block;
+//     background-color: #7DC855;
+//     border-radius: 6px;
+//     font-size: 16px;
+//     color: #FFFFFF;
+//     text-decoration: none;
+//     padding: 12px 30px;
+//     transition: all .5s;
+// }
 
-.cart-btn:hover {
-    background-color: #64af3d;
-}
+// .cart-btn:hover {
+//     background-color: #64af3d;
+// }
 
 /* Responsive */
 /*
