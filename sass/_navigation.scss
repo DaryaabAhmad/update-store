@@ -5,6 +5,8 @@
 
     .navigation {
 
+        // display: none;
+        &,
         &__checkbox,
         &__list,
         &__nav,
@@ -21,6 +23,7 @@
         position: absolute;
         left: 94.8%;
         top: 6.4rem;
+        z-index: 99999;
 
         &__checkbox {
             display: none;
@@ -217,7 +220,7 @@
 
                 @media only screen and (max-width: 375px) {
                     height: 100%;
-                width: 60vw;
+                    width: 60vw;
                 }
 
                 span {

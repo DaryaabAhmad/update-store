@@ -247,6 +247,9 @@
             margin: 0 .5rem;
             // margin-right: 2rem;
             fill: $color-heading;
+            &__1{
+                fill: $color-white;
+            }
         }
     }
 

@@ -1,11 +1,29 @@
+.container {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 83vh;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding-top: 10rem;
+
+    }
+}
+
 .content {
     // display: flex;
     // background-image: url(../img/hotel-2.jpg);
-    background: transparent;
     // height: 120vh;
+    // height: 100vh;
+    // padding-top: 5rem;
+    height: 82vh;
     width: 100%;
-    height: 100vh;
-    padding-top: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+
+    // padding: 1.5rem;
     // background-repeat: no-repeat;
 
     // @media only screen and (max-width: $bp-medium) {
@@ -23,12 +41,12 @@
     width: 80%;
 }
 
-// .container{
-//     position: relative;
-// }
+
 
 @media (max-width: $bp-smallest) {
     p {
         width: 55rem;
     }
 }
+
+

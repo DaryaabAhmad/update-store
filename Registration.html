@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#MaNgo Marketplace</title>
+    <title>>Registration Page |🥭MaNgo Marketplace</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
@@ -100,30 +100,24 @@
             </nav>
         </div>
     </header>
+    <nav class="navigation ">
+        <input type="checkbox" class=" navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"> &nbsp </span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="./index.html"         class="navigation__link"> home           </a></li>
+                <li class="navigation__item"><a href="#login"               class="navigation__link">Login           </a></li>
+                <li class="navigation__item"><a href="/Registration.html"   class="navigation__link">Registration    </a></li>
+                <li class="navigation__item"><a href="/Product.html"        class="navigation__link">Products        </a></li>
+                <li class="navigation__item"><a href="./Contact.html"       class="navigation__link">Contact US      </a></li>
+            </ul>
+        </nav>
+    </nav>
     <section class="container">
-        <div class="navigation ">
-            <input type="checkbox" class=" navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon"> &nbsp </span>
-            </label>
-            <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>
-                            home</a></li>
-                    <li class="navigation__item"><a href="#login" class="navigation__link"><span>02</span>Login</a>
-                    </li>
-                    <li class="navigation__item"><a href="/Registration.html"
-                            class="navigation__link"><span>03</span>Registration</a></li>
-                    <li class="navigation__item"><a href="/Product.html"
-                            class="navigation__link"><span>04</span>Products</a></li>
-                    <li class="navigation__item"><a href="./Contact.html"
-                            class="navigation__link"><span>05</span>Contact US </a></li>
-                </ul>
-            </nav>
-        </div>
         <div class="content">
-            <!-- contact Section Popup -->
 
             <div class="popup " id="login">
                 <div class="popup__content ">
@@ -164,66 +158,63 @@
                     </div>
                 </div>
             </div>
-            <main class="manu-page">
-                <!-- registration page -->
-                <div class="content">
-                    <section class="section-login">
-                        <div class="page-view">
-                            <div class="home-page">
-                                <div class="home-page__form">
 
-                                    <form class="form form__r">
+            <!-- registration page -->
 
-                                        <div class="form__group">
-                                            <h1 class="heading-login  bold-to-normal">Register yourself here</h1>
-                                            <div class="l-1">
-                                                <strong> Already have an Account? <a href="#login">Login</a>
-                                                </strong>
-                                            </div>
-                                            <h3 class="l-1"><em>Login Information</em></h3>
+            <section class="section-login">
+                <div class="page-view">
+                    <div class="home-page">
+                        <div class="home-page__form">
 
-                                            <input id="login-here" type="text" class="form__input"
-                                                placeholder="Full Name" id="name">
-                                            <label for="name" class="form__label">User Name</label>
+                            <form class="form form__r">
 
-                                            <input type="email" class="form__input" placeholder="Email address"
-                                                id="email" required>
-                                            <label for="email" class="form__label">Email address</label>
+                                <div class="form__group">
+                                    <h1 class="heading-login  bold-to-normal">Register yourself here</h1>
+                                    <div class="l-1">
+                                        <strong> Already have an Account? <a href="#login">Login</a>
+                                        </strong>
+                                    </div>
+                                    <h3 class="l-1"><em>Login Information</em></h3>
 
-                                            <input type="password" class="form__input" placeholder="Your Password"
-                                                id="password" required>
-                                            <label for="password" class="form__label">Password</label>
-                                        </div>
+                                    <input id="login-here" type="text" class="form__input" placeholder="Full Name"
+                                        id="name">
+                                    <label for="name" class="form__label">User Name</label>
 
-                                        <div class="form__group">
-                                            <h3 class="l-1 l-2 "><em>Shipping Detail</em></h3>
+                                    <input type="email" class="form__input" placeholder="Email address" id="email"
+                                        required>
+                                    <label for="email" class="form__label">Email address</label>
 
-                                            <input id="login-here" type="type" class="form__input"
-                                                placeholder="Your Order will be Delivered on that Address" id="name">
-                                            <label for="name" class="form__label">Address</label>
+                                    <input type="password" class="form__input" placeholder="Your Password" id="password"
+                                        required>
+                                    <label for="password" class="form__label">Password</label>
+                                </div>
 
-                                            <input id="login-here" type="type" class="form__input" placeholder="City"
-                                                id="name">
-                                            <label for="name" class="form__label">City</label>
+                                <div class="form__group">
+                                    <h3 class="l-1 l-2 "><em>Shipping Detail</em></h3>
 
-                                            <input id="login-here" type="type" class="form__input"
-                                                placeholder="Postal Code" id="name">
-                                            <label for="name" class="form__label">Postal Code</label>
-                                        </div>
-                                        <!-- remove btn--login -->
-                                        <a href="./index.html" class="btn btn--login">Submit &rarr;</a>
-                                        <!-- <div class="form__group">
+                                    <input id="login-here" type="type" class="form__input"
+                                        placeholder="Your Order will be Delivered on that Address" id="name">
+                                    <label for="name" class="form__label">Address</label>
+
+                                    <input id="login-here" type="type" class="form__input" placeholder="City" id="name">
+                                    <label for="name" class="form__label">City</label>
+
+                                    <input id="login-here" type="type" class="form__input" placeholder="Postal Code"
+                                        id="name">
+                                    <label for="name" class="form__label">Postal Code</label>
+                                </div>
+                                <!-- remove btn--login -->
+                                <a href="./index.html" class="btn btn--login">Submit &rarr;</a>
+                                <!-- <div class="form__group">
                                     <button href="go-to-main" class="btn">Login &rarr; </button>
                                 </div> -->
-                                    </form>
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </main>
+            </section>
         </div>
-        </div>
+    </section>
 </body>
 
 </html>

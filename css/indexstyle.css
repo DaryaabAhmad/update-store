@@ -16,7 +16,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Sedgwick Ave Display', cursive;
   padding: 0px;
   margin: 0px;
   outline: none;
@@ -49,25 +49,32 @@ html {
       font-size: 32%; } }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Sedgwick Ave Display', cursive;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; }
+  min-height: 100vh;
+  scroll-behavior: smooth; }
 
 .container {
   overflow: scroll;
   overflow-x: hidden;
-  height: 82vh; }
+  width: 100vw;
+  height: 83vh;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      padding-top: 10rem; } }
 
 .content {
-  background: transparent;
+  height: 82vh;
   width: 100%;
-  height: 100vh;
-  padding-top: 5rem; }
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent; }
 
 .section-login {
   margin: 1rem auto;
@@ -224,6 +231,8 @@ body {
     height: 1.75rem;
     margin: 0 .5rem;
     fill: #695e5e; }
+    .sub-header__icon-contact__1 {
+      fill: #FFFFFF; }
 
 .sub-header__icon:hover, .sub-header__link:hover {
   transform: translateY(2px);
@@ -645,6 +654,81 @@ body {
     width: 100%;
     margin-left: 0; } }
 
+.img-w {
+  width: 100%; }
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+  row-gap: 2.3rem;
+  align-items: center; }
+  .main h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: black; }
+    .main h1 span {
+      color: #ff0000; }
+  .main h3 {
+    font-size: 1.8rem;
+    color: black; }
+  .main p {
+    line-height: 1.7;
+    font-size: 1.5rem; }
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.1rem;
+  margin-top: 2.1rem; }
+  .social a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #244D61;
+    font-size: 2.5rem;
+    border: 1.6px solid #244D61;
+    border-radius: 50%;
+    padding: 0.39rem;
+    text-align: center; }
+    .social a:hover {
+      color: #fff;
+      background-color: #244D61;
+      box-shadow: 0 0 20px #244D61;
+      transition: all .2s ease-in-out; }
+
+.images {
+  width: 80%;
+  margin-left: auto;
+  position: relative;
+  z-index: -1; }
+  .images::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 130px);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    /* background: linear-gradient(145deg, #1e2024, #23272b); */
+    /* box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; */
+    border-radius: 6px;
+    z-index: -1; }
+  .images::before {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; }
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #244D61; }
+  .images {
+    width: 100%;
+    margin: auto; }
+  .main {
+    margin-top: 2rem; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -768,14 +852,6 @@ body {
     background-color: red;
     left: 0px;
     top: 0px; } }
-
-.manu-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px; }
-  @media only screen and (max-width: 56.25em) {
-    .manu-page {
-      flex-direction: column; } }
 
 .left-column {
   width: 65%; }
@@ -995,14 +1071,15 @@ body {
     }
 } */
 @media only screen and (min-width: 37.5em) {
-  .navigation__checkbox, .navigation__list, .navigation__nav, .navigation__link, .navigation__item {
+  .navigation, .navigation__checkbox, .navigation__list, .navigation__nav, .navigation__link, .navigation__item {
     display: none; } }
 
 @media only screen and (max-width: 37.5em) {
   .navigation {
     position: absolute;
     left: 94.8%;
-    top: 6.4rem; }
+    top: 6.4rem;
+    z-index: 99999; }
     .navigation__checkbox {
       display: none;
       right: -10rem;
