@@ -156,6 +156,24 @@
     }
 }
 
+@keyframes anim{
+    0%{
+        color: #ffffff1a;
+        transform: translateY(0);
+        margin-left: 0;
+    }
+    25%{
+        color: #6cbebe;
+        transform: translateY(-15px);
+        margin-left: 15px;
+        text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+    }
+    100%{
+        color: #ffffff1a;
+        transform: translateY(0);
+    }
+}
+
 @keyframes moveInLefttoRight {
     0% {
         opacity: 0;
