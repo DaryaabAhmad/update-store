@@ -127,6 +127,11 @@
     font-weight: 300;
     color: #86939E;
     line-height: 24px;
+
+    @media (max-width: $bp-smallest) {
+        width: 55rem;
+
+    }
 }
 
 /* Product Configuration */

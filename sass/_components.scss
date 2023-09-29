@@ -36,7 +36,8 @@
 
     // }
 }
-.web-page{
+
+.web-page {
     padding: 3rem;
 }
 
@@ -47,13 +48,9 @@
 
 
 
-@media (max-width: $bp-smallest) {
-    p {
-        width: 55rem;
-    }
-}
 
-.section-product{
+
+.section-product {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -66,7 +63,34 @@
     // box-shadow: 0 1px 6px #000;
     // border-radius: 1rem;
     // border: none;
+
+    @media  screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 30rem;
+        margin-bottom: 20rem;
+
+    }
+    // @media  screen and (max-width: $bp-small) {
+    //     flex-direction: column;
+    //     gap: 30rem;
+    //     margin-bottom: 20rem;
+
+    // }
 }
+
+.h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    animation: animation-h1 3s ease-in;
+    animation-iteration-count: infinite;
+    height: 17rem;
+
+}
+
+
+
+
 .card {
     position: relative;
     width: 40rem;
@@ -75,125 +99,148 @@
     justify-content: space-between;
     flex-direction: column;
 
-   
+    @media  screen and (max-width: 768px) {
+        width: 80rem;
+        height: 50rem;
 
+    }
+    @media  screen and (max-width: $bp-small) {
+        width: 60rem;
+        height: 40rem;
+    }
+    @media  screen and (max-width: $bp-smallest) {
+        width: 50rem;
+        height: 40rem;
+    }
 }
 
 
-.card .imgBx {
+.imgBx {
     position: relative;
     width: 100%;
     height: 24rem;
     border-radius: 15px;
-    &:hover{
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 45rem;
+    }
+
+    &:hover {
         // transform: translateY(-1rem);
-        height: 23rem;
-        width: 95%;
-        transition: all .5s;
-        margin: auto;
+        // height: 23rem;
+        // width: 95%;
+        transition: all .3s;
+        // margin: auto;
+        transform: scale(.975);
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        // box-shadow: -10px 10px 0 #a3b18a;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 68px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        // box-shadow: -10px 10px 0 #ffffff;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.contenntt {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #202124;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+
+    ul {
+        padding: 0 20px;
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 5px;
+        list-style: none;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    @media  only screen and (max-width: 800px) {
+        margin-top: 2rem;
         
     }
 }
 
-.card .imgBx img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
 
-.card .imgBx::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    // box-shadow: -10px 10px 0 #a3b18a;
-}
-
-.card .imgBx::after {
-    content: '';
-    position: absolute;
-    bottom: 68px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #a3b18a;
-}
-
-.card .contenntt {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background: #344e41;
-    border-radius: 15px;
-    border-top-left-radius: 0;
-}
-// .contenntt:hover{
-//     transform: translateY(-1rem);
-//     transition: all .2s;
-// }
-
-.card .contenntt ul {
-    padding: 0 20px;
-    color: #fff;
-    font-size: 18px;
-    padding-bottom: 5px;
-    list-style: none;
-}
-
-.card .contenntt p {
-    font-size: 14px;
-}
-
-.card .contenntt .price {
+.price {
     position: absolute;
     top: -52%;
     height: 52%;
     width: 50%;
-    background: #344e41;
-    border-top: 10px solid #a3b18a;
-    border-right: 10px solid #a3b18a;
+    font-size: 1.6rem;
+    background: #202124;
+    border-top: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
     border-top-right-radius: 25px;
+
+    a {
+        position: relative;
+        background: #fff;
+        padding: 10px 20px;
+        margin: 1.5rem;
+        display: block;
+        border-radius: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        color: #202124;
+        transition: 0.5s;
+        border: 2px solid #202124;
+
+
+        &:hover {
+            color: #fff;
+            background: #202124;
+            border: 2px solid #fff;
+            transform: scale(1.06);
+            transition: all .2s;
+        }
+    }
 }
 
-.card .contenntt .price a {
-    position: relative;
-    background: #fff;
-    padding: 10px 20px;
-    margin: 15px;
-    display: block;
-    border-radius: 7px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    color: #344e41;
-    transition: 0.5s;
-    border: 2px solid #344e41;
-}
+// .card .contenntt .price::before {
+//     content: '';
+//     position: absolute;
+//     width: 2px;
+//     height: 2px;
+//     background: transparent;
+//     border-radius: 50%;
+//     box-shadow: -10px -10px 0#ff0000;
+// }
 
-.card .contenntt .price a:hover {
-    color: #fff;
-    background: #344e41;
-    border: 2px solid #fff;
-}
-
-.card .contenntt .price::before {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px -10px 0#a3b18a;
-}
-
-.card .contenntt .price::after {
+.price::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -202,5 +249,5 @@
     height: 25px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: -10px 10px 0 #344e41;
+    box-shadow: -10px 10px 0 #202124;
 }
