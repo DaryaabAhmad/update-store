@@ -1,3 +1,5 @@
+//product sendtion 1
+
 .section-product {
     display: flex;
     justify-content: space-evenly;
@@ -19,11 +21,12 @@
 
     }
 
-   &-2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   }
+    &-3 {
+        // mawidth: 1500px;
+        position: relative;
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
 }
 
 
@@ -31,11 +34,114 @@
     font-size: 3rem;
     text-align: center;
     color: black;
-    animation: animation-h1 3s ease-in;
+    animation: animation-h1 3s ease-in-out;
     animation-iteration-count: infinite;
     height: 17rem;
 
+    // &-1{
+
+    // animation: anim 3s ease-in-out;
+    // animation-iteration-count: infinite;
+
+    // }
+
 }
+
+h2 span {
+    animation: anim 7s ease-in-out;
+    animation-iteration-count: infinite;
+    letter-spacing: -1rem;
+
+    &:nth-child(1) {
+
+        animation-delay: 0.3s;
+    }
+
+    &:nth-child(2) {
+
+        animation-delay: .6s;
+    }
+
+    &:nth-child(3) {
+
+        animation-delay: .9s;
+    }
+
+    &:nth-child(4) {
+
+        animation-delay: 1.2s;
+    }
+
+    &:nth-child(5) {
+
+        animation-delay: 1.5s;
+    }
+
+    &:nth-child(6) {
+
+        animation-delay: 1.8s;
+    }
+
+    &:nth-child(7) {
+
+        animation-delay: 2.1s;
+    }
+
+    &:nth-child(8) {
+        animation-delay: 2.4s;
+    }
+
+    &:nth-child(9) {
+        animation-delay: 2.7s;
+    }
+
+    &:nth-child(10) {
+        animation-delay: 3s;
+    }
+
+    &:nth-child(11) {
+        animation-delay: 3.3s;
+    }
+
+    &:nth-child(12) {
+        animation-delay: 3.6s;
+    }
+
+    &:nth-child(13) {
+        animation-delay: 3.9s;
+    }
+
+    &:nth-child(14) {
+        animation-delay: 4.2s;
+    }
+
+    &:nth-child(15) {
+        animation-delay: 4.5s;
+    }
+
+    &:nth-child(16) {
+        animation-delay: 4.8s;
+    }
+
+    &:nth-child(17) {
+        animation-delay: 5.1s;
+    }
+
+    &:nth-child(18) {
+        animation-delay: 5.4s;
+    }
+
+    &:nth-child(19) {
+        animation-delay: 5.7s;
+    }
+
+    &:nth-child(20) {
+        animation-delay: 6s;
+    }
+
+    // &:nth-child(16)
+}
+
 
 
 
@@ -51,7 +157,6 @@
     @media screen and (max-width: 768px) {
         width: 80rem;
         height: 50rem;
-
     }
 
     @media screen and (max-width: $bp-small) {
@@ -63,6 +168,7 @@
         width: 50rem;
         height: 40rem;
     }
+
     @media screen and (max-width: $bp-medium) {
         // width: 50rem;
         height: 55rem;
@@ -126,7 +232,7 @@
     position: relative;
     width: 100%;
     height: 150px;
-    background: #202124;
+    background: $color-dark;
     border-radius: 15px;
     border-top-left-radius: 0;
 
@@ -155,7 +261,7 @@
     height: 52%;
     width: 50%;
     font-size: 1.6rem;
-    background: #202124;
+    background: $color-dark;
     border-top: 10px solid #ffffff;
     border-right: 10px solid #ffffff;
     border-top-right-radius: 25px;
@@ -170,14 +276,14 @@
         font-weight: 600;
         text-decoration: none;
         text-align: center;
-        color: #202124;
+        color: $color-dark;
         transition: 0.5s;
-        border: 2px solid #202124;
+        border: 2px solid $color-dark;
 
 
         &:hover {
             color: #fff;
-            background: #202124;
+            background: $color-dark;
             border: 2px solid #fff;
             transform: scale(1.06);
             transition: all .2s;
@@ -204,5 +310,242 @@
     height: 25px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: -10px 10px 0 #202124;
+    box-shadow: -10px 10px 0 $color-dark;
+}
+
+
+
+// product section 2
+
+
+
+
+.card-2 {
+
+    // functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 65rem;
+    // height: 52rem;
+    width: 45rem;
+
+    &__side {
+        height: 58rem;
+        // height: 52rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // ~webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+
+            &-1 {
+
+                transform: rotate(10deg);
+
+
+                &:hover {
+                    transform: rotate(0);
+                    transition: all .3s;
+
+                }
+            }
+        }
+
+        &--back {
+
+            transform: rotateY(-180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary, $color-primary );
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary, $color-white );
+            }
+
+            &-3 {
+
+                background-image: linear-gradient(to right bottom, $color-secondary, $color-black );
+            }
+
+            &-4 {
+
+                background-image: linear-gradient(to right bottom, $color-primary, $color-black );
+            }
+        }
+    }
+
+
+
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+
+    }
+
+    //front side styling
+
+    &__picture {
+        background-size: cover;
+        height: 60rem;
+        background-blend-mode: screen;
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--1 {
+            background-image: url(../img/cloth1.jpg)
+        }
+
+        &--2 {
+            background-image: url(../img/cloth2.jpg)
+        }
+
+        &--3 {
+            background-image: url(../img/cloth3.jpg)
+        }
+
+        &--4 {
+            background-image: url(../img/cloth2.1.jpg)
+        }
+
+        &--5 {
+            background-image: url(../img/sport1.jpg)
+        }
+
+        &--6 {
+            background-image: url(../img/sport2.png)
+        }
+
+
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-white;
+        position: relative;
+        top: -32rem;
+        // right: 2rem;
+        // width: 75%;
+
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        color: $color-black;
+        font-weight: 600;
+        background: rgba($color-white, .85);
+        border-radius: 1rem;
+        margin: 3rem 0;
+
+        &--1 {
+            background: rgba($color-black, .85);
+
+            border: none;
+            margin-top: 5rem;
+            color: white;
+            font-weight: 300;
+
+        }
+
+
+    }
+
+
+
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $color-white;
+
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+
+}
+
+
+//.card:hover .card__side
+
+
+.row {
+    // max-width: 114rem; 
+    margin: 0 auto;
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * 6rem) / 3);
+    }
+}
+
+
+.name span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.name span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.name span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.name span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.name span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.name span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.name span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.name span:nth-child(8) {
+    animation-delay: 0.8s;
 }

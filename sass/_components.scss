@@ -12,27 +12,13 @@
 }
 
 .content {
-    // display: flex;
-    // background-image: url(../img/hotel-2.jpg);
-    // height: 120vh;
-    // height: 100vh;
-    // padding-top: 5rem;
+
     height: 82vh;
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     background: transparent;
-    // padding: 3rem;
-    // background-repeat: no-repeat;
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     flex-direction: column;
-    // }
-
-    // &__page{
-    // background-image: linear-gradient(to right bottom, rgba(40, 40, 40, 0.801), $color-gradiant);
-
-    // }
 }
 
 .web-page {
@@ -45,324 +31,79 @@
 }
 
 
-.cardd {
+// electronic
 
-    // functionality
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+
+
+
+.card-3 {
     position: relative;
-    height: 65rem;
-    // height: 52rem;
-    width: 45rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
 
-    &__side {
-        height: 58rem;
-        // height: 52rem;
-        transition: all .8s ease;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        // ~webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border-radius: .3rem;
-        overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+.front {
+    width: 30rem;
+    height: 20rem;
+    transition: 0.5s;
 
-        &--front {
-            background-color: $color-white;
-        }
-
-        &--back {
-
-            transform: rotateY(-180deg);
-
-            &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary, $color-primary );
-            }
-
-            &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark );
-            }
-
-            &-3 {
-
-                background-image: linear-gradient(to right bottom, $color-secondary, $color-black );
-            }
-        }
-    }
-
-
-
-
-    &:hover &__side--front {
-        transform: rotateY(180deg);
-
-    }
-
-    &:hover &__side--back {
-        transform: rotateY(0);
-
-    }
-
-    //front side styling
-
-    &__picture {
-        background-size: cover;
-        height: 60rem;
-        background-blend-mode: screen;
-        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-
-        &--1 {
-            background-image: url(../img/cloth3.jpg)
-        }
-
-        &--2 {
-            background-image: url(../img/cloth.jpg)
-        }
-
-        // &--3 {
-        //     background-image: linear-gradient(to right bottom, $color-secondary, $color-black ),
-        //         url(../img/chanel.jpg)
-        // }
-    }
-
-    &__heading {
-        font-size: 2.8rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        text-align: center;
-        color: $color-white;
+    &.front1 {
         position: relative;
-        top: -32rem;
-        // right: 2rem;
-        // width: 75%;
-
+        background: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(10rem);
     }
 
-    &__heading-span {
-        padding: 1rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-        color: $color-black;
-        font-weight: 600;
-        background: rgba($color-white, .85);
-        border-radius: 1rem;
-        margin: 3rem 0;
-
-        &--1 {
-            background: rgba($color-black, .85);
-
-            border: none;
-            margin-top: 5rem;
-            color: white;
-            font-weight: 300;
-
-        }
-
-        // &--2 {
-        //     background-image: linear-gradient(to right bottom,
-        //             rgba($color-primary, .85),
-        //             rgba($color-black, .85));
-        // }
-
-        // &--3 {
-        //     background-image: linear-gradient(to right bottom,
-        //             rgba($color-primary, .85),
-        //             rgba($color-secondary, .85));
-        // }
-    }
-
-    &__details {
-        padding: 3rem;
-
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-
-            li {
-                text-align: center;
-                font-size: 2.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-
-            }
-        }
-    }
-
-    // FRONT SIDE STYLING
-    &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
-
-    }
-
-    &__price-box {
-        text-align: center;
-        margin-bottom: 8rem;
-        color: $color-white;
-
-    }
-
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
-    }
-
-
-
-
-
-
-    // //@include respond(tab-port) {
-    // @media only screen and (max-width: 56.25em),
-    // only screen and (hover: none) {
-
-    //     height: auto;
-    //     // border-radius: 3px;
-    //     // background-color: $color-white;
-    //     // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-
-    //     &__side {
-    //         height: auto;
-    //         position: relative;
-    //         box-shadow: none;
-
-    //         &--back {
-    //             transform: rotateY(0);
-    //             clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-    //         }
-    //     }
-
-    //     &:hover &__side--front {
-    //         transform: rotateY(0);
-    //     }
-
-
-    //     &__details {
-    //         padding: 1rem 3rem;
-    //     }
-
-    //     // front side styling
-    //     &__cta {
-    //         position: relative;
-    //         top: 0%;
-    //         left: 0;
-    //         transform: translate(0);
-    //         width: 100%;
-    //         padding: 7rem 4rem 4rem 4rem;
-    //     }
-
-    //     &__price-box {
-    //         margin-bottom: 3rem;
-    //     }
-
-    //     &__price-value {
-    //         font-size: 4rem;
-    //     }
-    // }
-}
-
-
-//.card:hover .card__side
-
-
-.row {
-    // max-width: 114rem; 
-    margin: 0 auto;
-
-    .col-1-of-3 {
-        width: calc((100% - 2 * 6rem) / 3);
-    }
-}
-/*
-@keyframes animate {
-    0% {
-        opacity: 0%;
-        transform: rotateY(90deg);
-        filter: blur(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0px);
+    &.front2 {
+        position: relative;
+        background: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 10px rgba($color-black, 0.8);
+        transform: translateY(-10rem);
     }
 }
 
-h1 span:nth-child(1) {
-    animation-delay: 0.3s;
+.content2 {
+    img {
+        /* max-width: 100px; */
+        width: 30rem;
+        height: 20rem;
+    }
+
+    a {
+        // margin: 1.5rem 0 0;
+        // display: inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        // color: $color-dark;
+        padding: 5px;
+        border: 1px solid $color-dark;
+
+       
+    }
 }
 
-h1 span:nth-child(2) {
-    animation-delay: .6s;
+.card-3:hover .front.front1 {
+    background: $color-dark;
+    transform: translateY(0);
 }
 
-h1 span:nth-child(3) {
-    animation-delay: .9s;
+.content2 {
+    opacity: 0.3;
+    transition: 0.5s;
 }
 
-h1 span:nth-child(4) {
-    animation-delay: 1.2s;
+.card-3:hover .content2 {
+    opacity: 1;
 }
 
-h1 span:nth-child(5) {
-    animation-delay: 1.5s;
-}
-
-h1 span:nth-child(6) {
-    animation-delay: 1.8s;
-}
-
-h1 span:nth-child(7) {
-    animation-delay: 2.1s;
-}
-
-h1 span {
-    display: inline-block;
-    animation: animate .7s ease-in-out;
-    // animation-iteration-count: r;
-
-}
-
-*/
-.name span:nth-child(1){
-    animation-delay: 0.1s;
-}
-.name span:nth-child(2){
-    animation-delay: 0.2s;
-}
-.name span:nth-child(3){
-    animation-delay: 0.3s;
-}
-.name span:nth-child(4){
-    animation-delay: 0.4s;
-}
-.name span:nth-child(5){
-    animation-delay: 0.5s;
-}
-.name span:nth-child(6){
-    animation-delay: 0.6s;
-}
-.name span:nth-child(7){
-    animation-delay: 0.7s;
-}
-.name span:nth-child(8){
-    animation-delay: 0.8s;
+.card-3:hover .front.front2 {
+    transform: translateY(0);
 }
