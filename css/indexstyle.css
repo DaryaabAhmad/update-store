@@ -45,10 +45,7 @@ body {
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-dark-2);
-  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: rgba(105, 94, 94, 0.8);
   min-height: 100vh;
   scroll-behavior: smooth; }
 
@@ -81,11 +78,15 @@ body {
 
 .front {
   width: 30rem;
-  height: 20rem;
+  height: 15rem;
   transition: 0.5s; }
+  @media screen and (max-width: 768px) {
+    .front {
+      width: 40rem;
+      height: auto; } }
   .front.front1 {
     position: relative;
-    background: #FFFFFF;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,15 +98,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-    transform: translateY(-10rem); }
+    transform: translateY(-5rem); }
+    @media screen and (max-width: 768px) {
+      .front.front2 {
+        transform: translateY(-15rem); } }
 
 .content2 img {
   /* max-width: 100px; */
   width: 30rem;
-  height: 20rem; }
+  height: 15rem; }
+  @media screen and (max-width: 768px) {
+    .content2 img {
+      width: 39rem;
+      height: 24rem; } }
 
 .content2 a {
   text-decoration: none;
@@ -118,11 +126,11 @@ body {
   transform: translateY(0); }
 
 .content2 {
-  opacity: 0.3;
-  transition: 0.5s; }
+  transition: 0.5s;
+  filter: blur(5px); }
 
 .card-3:hover .content2 {
-  opacity: 1; }
+  filter: blur(0px); }
 
 .card-3:hover .front.front2 {
   transform: translateY(0); }
@@ -1187,12 +1195,19 @@ body {
   @media screen and (max-width: 768px) {
     .section-product {
       flex-direction: column;
-      gap: 30rem;
-      margin-bottom: 20rem; } }
+      gap: 10rem;
+      padding: 0; } }
+  @media screen and (max-width: 768px) {
+    .section-product:nth-child(4), .section-product:nth-child(5) {
+      gap: 0rem; } }
   .section-product-3 {
     position: relative;
     justify-content: space-between;
     margin: 0 7rem; }
+    @media screen and (max-width: 768px) {
+      .section-product-3 {
+        gap: 0;
+        margin: 0; } }
 
 .h1 {
   font-size: 3rem;
