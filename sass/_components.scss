@@ -2,13 +2,31 @@
     overflow: scroll;
     overflow-x: hidden;
     width: 100vw;
-    // height: 83vh;
+    height: 86vh;
     // padding: 3rem;
+    scroll-behavior: smooth;
+
 
     @media only screen and (max-width: $bp-medium) {
+        height: 92vh;
         padding-top: 10rem;
-
     }
+
+    // @media (min-width: $bp-large) {
+    //     height: 90vh;
+    // }
+
+    // @media (width: $bp-large) {
+    //     height: 92vh;
+    // }
+
+    // @media (max-width: 800px) {
+    //     height: 95vh;
+    // }
+
+    // @media (width: $bp-medium) {
+    //     height: 93vh;
+    // }
 }
 
 .content {
@@ -103,6 +121,9 @@
 
 
     }
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 .card-3:hover .front.front1 {
@@ -129,5 +150,3 @@
 
 
 // gallery
-
-

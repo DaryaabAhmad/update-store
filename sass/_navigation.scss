@@ -20,9 +20,9 @@
 @media only screen and (max-width: $bp-small) {
 
     .navigation {
-        position: absolute;
+        position: fixed;
         left: 94.8%;
-        top: 6.4rem;
+        top: 4.5rem;
         z-index: 99999;
 
         &__checkbox {
@@ -178,15 +178,16 @@
             width: 100%;
 
             @media only screen and (max-width: $bp-small) {
-                left: 62%;
+                left: 85%;
             }
 
             @media only screen and (max-width: $bp-smallest) {
-                left: 54%;
+                left: 76%;
+                // left: 54%;
             }
 
             @media only screen and (max-width: 375px) {
-                left: 44%;
+                left: 66%;
             }
         }
 

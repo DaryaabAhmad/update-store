@@ -52,9 +52,12 @@ body {
 .container {
   overflow: scroll;
   overflow-x: hidden;
-  width: 100vw; }
+  width: 100vw;
+  height: 86vh;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 56.25em) {
     .container {
+      height: 92vh;
       padding-top: 10rem; } }
 
 .content {
@@ -121,6 +124,9 @@ body {
   padding: 5px;
   border: 1px solid #333; }
 
+.content2 p {
+  font-size: 1.5rem; }
+
 .card-3:hover .front.front1 {
   background: #333;
   transform: translateY(0); }
@@ -175,6 +181,7 @@ body {
     list-style: none;
     font-size: 1.4rem;
     width: 100%;
+    opacity: 999;
     overflow: hidden;
     z-index: 999;
     box-shadow: inset 0px -0.5px 2px 0px #000;
@@ -713,7 +720,6 @@ body {
 @media (max-width: 56.25em) {
   .contact-page {
     margin: 0 auto;
-    height: 100%;
     padding: 4rem 3rem; }
   .contact-page .contentt {
     flex-direction: column-reverse; }
@@ -1512,9 +1518,9 @@ h2 span {
 
 @media only screen and (max-width: 37.5em) {
   .navigation {
-    position: absolute;
+    position: fixed;
     left: 94.8%;
-    top: 6.4rem;
+    top: 4.5rem;
     z-index: 99999; }
     .navigation__checkbox {
       display: none;
@@ -1600,13 +1606,13 @@ h2 span {
       width: 100%; } }
     @media only screen and (max-width: 37.5em) and (max-width: 37.5em) {
       .navigation__list {
-        left: 62%; } }
+        left: 85%; } }
     @media only screen and (max-width: 37.5em) and (max-width: 31.25em) {
       .navigation__list {
-        left: 54%; } }
+        left: 76%; } }
     @media only screen and (max-width: 37.5em) and (max-width: 375px) {
       .navigation__list {
-        left: 44%; } }
+        left: 66%; } }
 
 @media only screen and (max-width: 37.5em) {
     .navigation__item {
