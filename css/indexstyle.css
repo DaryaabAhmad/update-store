@@ -274,7 +274,7 @@ footer {
     color: #000;
     position: absolute;
     top: .7rem;
-    right: .4rem;
+    right: 0rem;
     padding-left: .15rem;
     display: flex;
     justify-content: center;
