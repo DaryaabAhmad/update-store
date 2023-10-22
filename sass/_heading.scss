@@ -47,14 +47,17 @@
     }
 
 }
-
+.sub-header{
+    animation: moveInBottom .7s ease-out;
+    // animation:  moveInForm .7s ease;
+    // animation:  moveInColore .8s ease;
+}
 .header {
     // font-size: 1.4rem;
     // border-bottom: var(--line);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // animation: moveInRight 2s ease-out;
     list-style: none;
 
     // margin-top: 6.5rem;
@@ -70,21 +73,12 @@
         // height: 7rem;
         box-shadow: inset 0px -0.5px 2px 0px $color-black;
         background: $color-white;
-
-
-
     }
 
     @media only screen and (max-width: $bp-small ) {
         // display: none;
         padding-right: 5%;
     }
-
-    // @media only screen and (width: $bp-smallest ) {
-    //     // display: none;
-    //     padding-right: 7%;
-    // }
-
 }
 
 .user-nav {
@@ -159,7 +153,7 @@
         height: 4rem;
         border-radius: 50%;
         margin-right: 1rem;
-        animation: moveInLeft 2s ease-out;
+        animation: moveInRight 2s ease-out;
         animation-delay: .2s;
         cursor: progress;
 
@@ -171,7 +165,7 @@
         padding-left: .5rem;
         font-size: 1.6rem;
         color: $color-primary;
-        animation: moveInLeft 2s ease-out;
+        animation: moveInRight 2s ease-out;
         animation-delay: .2s;
         font-weight: bold;
         text-transform: uppercase;

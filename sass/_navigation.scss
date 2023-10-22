@@ -166,8 +166,8 @@
             width: 0;
             // transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             // transition: all .8s cubic-bezier(.15, -.16, .44, 1.98);
-            transition: all .8s cubic-bezier(0, -0.33, 0.31, 1.60);
-
+            // transition: all .8s cubic-bezier(0, -0.33, 0.31, 1.60);
+            transition: all .7s cubic-bezier(0, -2, .5, 2);
         }
 
         &__list {

@@ -24,7 +24,7 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(5rem);
 
     }
 
@@ -44,13 +44,19 @@
     0% {
         opacity: 0;
         transform: translateY(3rem);
+    }
 
+    10% {
+        opacity: .2;
+    }
+
+    85% {
+        opacity: .5;
     }
 
     100% {
         opacity: 1;
         transform: translate(0);
-
     }
 }
 
@@ -69,8 +75,6 @@
         opacity: 0;
         transform: translateX(-5rem);
         // font-size: 5rem;
-
-
     }
 
     100% {
@@ -78,7 +82,6 @@
         opacity: 1;
         transform: translate(0);
         // transform: translate(0);
-
     }
 }
 
@@ -93,7 +96,6 @@
         opacity: 1;
         transform: translate(0);
         // transform: translate(0);
-
     }
 }
 
@@ -108,6 +110,17 @@
     50% {
         transform: scale(1.05);
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+@keyframes Zoomout {
+    0% {
+        transform: scale(1.25);
+        box-shadow: none;
     }
 
     100% {
@@ -190,24 +203,6 @@
     }
 }
 
-@keyframes moveInLefttoRight {
-    0% {
-        opacity: 0;
-        transform: translateX(5rem);
-        /*rotate(-50deg)*/
-    }
-
-    80% {
-        transform: translateX(-.5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-        /*rotate(180deg)*/
-    }
-}
-
 @keyframes moveInForm {
     0% {
         opacity: 0;
@@ -235,7 +230,6 @@
 
 
 @keyframes moveInColore {
-
     0% {
         background-color: red;
         left: 0px;
