@@ -292,16 +292,19 @@ footer {
 .facebook:hover .tooltip {
     // background: #3b5999;
     background: #FFFC00;
+    color: $color-black;
 
 }
 
 .instagram:hover span,
 .instagram:hover .tooltip {
     background: #e1306c;
+    color: $color-black;
 }
 
 .twitter:hover span,
 .twitter:hover .tooltip {
+    color: $color-black;
     background: #25D366;
 }
 
@@ -309,4 +312,5 @@ footer {
 .youtube:hover .tooltip {
     // background: #CD201F;
     background: #FF0000;
+    color: $color-black;
 }

@@ -16,8 +16,10 @@
         font-size: 6rem;
         font-weight: 600;
         color: black;
+
         span {
-            color: $color-secondary ;}
+            color: $color-secondary ;
+        }
 
     }
 
@@ -50,14 +52,44 @@
         padding: 0.39rem;
         text-align: center;
 
-        &:hover {
+        // &:hover {
+        //     color: #fff;
+        //     background-color: #244D61;
+        //     box-shadow: 0 0 20px #244D61;
+        //     transition: all .2s ease-in-out;
+        // }
+        &:hover:nth-child(1) {
             color: #fff;
-            background-color: #244D61;
-            box-shadow: 0 0 20px #244D61;
+            background-color: #FFFC00;
+            box-shadow: 0 0 20px #FFFC00;
             transition: all .2s ease-in-out;
+            // border-radius: 50%;
+
+        } &:hover:nth-child(2) {
+            color: #fff;
+            background-color: #e1306c;
+            box-shadow: 0 0 20px #e1306c;
+            transition: all .2s ease-in-out;
+            // border-radius: 50%;
+
+        } &:hover:nth-child(3) {
+            color: #fff;
+            background-color: #25D366;
+            box-shadow: 0 0 20px #25D366;
+            transition: all .2s ease-in-out;
+            // border-radius: 50%;
+
+        } &:hover:nth-child(4) {
+            color: #fff;
+            background-color:  #CD201F;
+            box-shadow: 0 0 20px  #CD201F;
+            transition: all .2s ease-in-out;
+            // border-radius: 50%;
+
         }
     }
 }
+
 
 
 

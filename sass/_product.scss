@@ -363,10 +363,7 @@ h2 span {
             background-color: $color-white;
 
             &-1 {
-
                 transform: rotate(10deg);
-
-
                 &:hover {
                     transform: rotate(0);
                     transition: all .3s;
@@ -376,9 +373,7 @@ h2 span {
         }
 
         &--back {
-
             transform: rotateY(-180deg);
-
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary, $color-primary );
             }
@@ -473,19 +468,12 @@ h2 span {
 
         &--1 {
             background: rgba($color-black, .85);
-
             border: none;
             margin-top: 5rem;
             color: white;
             font-weight: 300;
-
         }
-
-
     }
-
-
-
     // FRONT SIDE STYLING
     &__cta {
         position: absolute;
@@ -494,7 +482,6 @@ h2 span {
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
-
     }
 
     &__price-box {
@@ -650,7 +637,7 @@ h2 span {
 .content2 {
     // opacity: 0.3;
     transition: 0.5s;
-    filter: blur(5px);
+    filter: blur(2px);
 }
 
 .card-3:hover .content2 {
