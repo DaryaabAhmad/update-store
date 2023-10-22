@@ -1661,6 +1661,9 @@ footer {
       .footer-data-main {
         margin: 0 auto;
         padding: 4rem 3rem; } }
+    @media (max-width: 37.5em) {
+      .footer-data-main {
+        width: 85%; } }
     .footer-data-main-info {
       display: flex;
       align-items: center; }
