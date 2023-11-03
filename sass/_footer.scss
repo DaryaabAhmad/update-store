@@ -4,20 +4,21 @@ footer {
 }
 
 .footer-data {
-    padding: 5.0rem 0;
+    padding: 1.5rem 0;
     background-color: #202124;
     color: #fff;
     background: $color-dark;
     height: auto;
     bottom: 0;
     position: relative;
+    margin: 0 auto;
 
     &-main {
         width: 95%;
-        background: rgba($color-heading, .1);
+        // background: rgba($color-heading, .1);
         border-radius: 1rem;
-        margin: 2rem auto;
-        padding: 4rem;
+        margin: 0 auto;
+        padding: .3rem;
 
         // max-width: 1200px;
         @media only screen and (max-width: $bp-large) {
@@ -184,7 +185,8 @@ footer {
     color: grey;
     text-align: right;
     margin-right: 10rem;
-    padding: 2.5rem;
+    // padding: .5rem;
+    margin-top: -2.5rem;
 }
 
 .l__link:link,
@@ -214,7 +216,7 @@ footer {
     align-items: center;
     background: transparent;
     gap: 1.5rem;
-    margin-top: 10rem;
+    // margin-top: 10rem;
 }
 
 .icons {
