@@ -601,7 +601,7 @@ h2 span {
 
 .front {
     width: 35rem;
-    height: 15rem;
+    height: 20rem;
     transition: 0.5s;
 
     @media only screen and (min-width: $bp-large) and (max-width: 1250px) {
@@ -648,7 +648,7 @@ h2 span {
     img {
         /* max-width: 100px; */
         width: 35rem;
-        height: 15rem;
+        height: 23rem;
 
         @media only screen and (min-width: $bp-large) and (max-width: 1250px) {
             width: 32rem;
