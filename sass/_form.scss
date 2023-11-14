@@ -20,9 +20,19 @@
         transform: rotate(0deg);
         height: auto;
         width: auto;
-        // padding: 0;
-
     }
+     &__l1 {
+        margin: 0 auto;
+        transform: rotate(3deg);
+        height: auto;
+        width: auto;
+        border: 2px solid $color-black;
+    }
+
+    &__l {
+        margin: 5rem auto;
+    }
+
 
     &__group:not(:last-child) {
         margin: 0 1.5rem;
@@ -81,7 +91,7 @@
             border-radius: 1rem;
             padding: 0 15px;
             resize: none;
-            
+
         }
 
     }
