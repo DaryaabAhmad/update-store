@@ -86,7 +86,7 @@ body {
     margin-bottom: 10rem; }
     @media (max-width: 37.5em) {
       .section-login-login {
-        opacity: 0; } }
+        width: 80%; } }
 
 .heading-login {
   text-align: center;
@@ -987,22 +987,26 @@ body {
     .info-container-1 h1 {
       color: #FFFFFF;
       font-size: 2rem;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'Playfair Display', serif; }
     .info-container-1 p {
       color: #FFFFFF;
       font-size: 1.5rem;
-      margin: 1rem 2.5rem; }
+      margin: 1rem 2.5rem;
+      font-family: 'Playfair Display', serif; }
   .info-container h1 {
     color: #000;
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; }
   .info-container label {
     display: block;
     cursor: pointer; }
   .info-container p {
     color: #000;
     font-size: 1.5rem;
-    margin: 1rem 2.5rem; }
+    margin: 1rem 2.5rem;
+    font-family: 'Playfair Display', serif; }
   .info-container a {
     margin: 5rem; }
 
