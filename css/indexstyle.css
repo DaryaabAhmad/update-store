@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 :root {
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -87,6 +88,150 @@ body {
     @media (max-width: 37.5em) {
       .section-login-login {
         width: 80%; } }
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+.screen {
+  background: linear-gradient(90deg, #555555, #000000);
+  position: relative;
+  width: 75rem;
+  box-shadow: 0px 0px 24px #5C5696; }
+
+.screen__content {
+  z-index: 1;
+  position: relative;
+  height: 100%; }
+
+.screen__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0); }
+
+.screen__background__shape {
+  transform: rotate(45deg);
+  position: absolute; }
+
+.screen__background__shape1 {
+  height: 520px;
+  width: 520px;
+  background: #FFF;
+  top: -50px;
+  right: 120px;
+  border-radius: 0 72px 0 0; }
+
+.screen__background__shape2 {
+  height: 220px;
+  width: 220px;
+  /* background: #6C63AC;	 */
+  background-color: #383737;
+  top: -172px;
+  right: 0;
+  border-radius: 32px; }
+
+.screen__background__shape3 {
+  height: 540px;
+  width: 190px;
+  background: linear-gradient(270deg, #2a2a2b, #000000);
+  top: -24px;
+  right: 0;
+  border-radius: 32px; }
+
+.screen__background__shape4 {
+  height: 400px;
+  width: 200px;
+  background: #3b3b3b;
+  top: 420px;
+  right: 50px;
+  border-radius: 60px; }
+
+.login {
+  width: 45rem;
+  padding: 2rem; }
+
+.login__field {
+  padding: 1px 0px;
+  position: relative; }
+
+.login__icon {
+  position: absolute;
+  top: 30px;
+  color: #7875B5; }
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #252525;
+  background: none;
+  padding: 10px;
+  /* padding-left: 24px;  */
+  font-weight: 700;
+  width: 75%;
+  transition: .2s; }
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6A679E; }
+
+.login__submit {
+  background: #fff;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #D4D3E8;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #4C489D;
+  box-shadow: 0px 2px 2px #5C5696;
+  cursor: pointer;
+  transition: .2s; }
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  border-color: #6A679E;
+  outline: none; }
+
+.button__icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #7875B5; }
+
+.social-login {
+  position: absolute;
+  height: 140px;
+  width: 160px;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
+  color: #fff; }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.social-login__icon {
+  padding: 20px 10px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0px 0px 8px #7875B5; }
+
+.social-login__icon:hover {
+  transform: scale(1.5); }
 
 .heading-login {
   text-align: center;
@@ -284,7 +429,7 @@ body {
     color: #695e5e; }
 
 .l-1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #000;
   text-align: center;
   padding: .5rem 1rem; }
@@ -455,7 +600,7 @@ body {
   .form__group:not(:last-child) {
     margin: 0 1.5rem; }
   .form__input {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: inherit;
     padding: 2% 7%;
     border-radius: .7rem;
@@ -490,7 +635,7 @@ body {
       padding: 0 15px;
       resize: none; }
   .form__label {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-left: 2rem;
     margin-top: .7rem;
@@ -532,10 +677,11 @@ body {
 
 }*/
 .btn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   height: 4rem;
   width: 20rem;
   margin: .5rem auto;
+  margin-bottom: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   border-radius: 10rem;
@@ -571,14 +717,14 @@ body {
     height: 6rem; }
   .btn--white {
     text-transform: none;
-    font-size: 2rem; }
+    font-size: 1rem; }
     .btn--white:hover {
       background-color: rgba(105, 94, 94, 0.1);
       color: #000;
       border: 1px solid black;
       font-weight: 600; }
     .btn--white__readmore {
-      font-size: 1.1rem;
+      font-size: 1rem;
       height: 3rem;
       width: 10rem;
       display: inline-block;
@@ -586,7 +732,7 @@ body {
       border-radius: .3rem; }
       @media screen and (max-width: 768px) {
         .btn--white__readmore {
-          font-size: 2rem;
+          font-size: 1rem;
           height: 6rem;
           width: 18rem; } }
 
@@ -1609,7 +1755,6 @@ h2 span {
 
 .content2 a {
   text-decoration: none;
-  font-weight: 900;
   padding: 5px;
   border: 1px solid #333; }
 
@@ -1991,3 +2136,14 @@ footer {
 .youtube:hover .tooltip {
   background: #FF0000;
   color: #000; }
+
+/* 
+heading 3 rem
+sub heading 1.5rem
+form__input font size 1.2rem 
+form__label font-size .8rem
+
+
+
+
+*/

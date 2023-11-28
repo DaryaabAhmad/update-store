@@ -1,8 +1,9 @@
 .btn {
-    font-size: 1.5rem;
+    font-size: $font-default;
     height: 4rem;
     width: 20rem;
     margin: .5rem auto;
+    margin-bottom: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     border-radius: 10rem;
@@ -57,7 +58,8 @@
 
     &--white {
         text-transform: none;
-        font-size: 2rem;
+        // font-size: 2rem;
+        font-size: $font-default;
 
         &:hover {
             background-color: rgba($color-heading, .1);
@@ -68,7 +70,7 @@
         }
 
         &__readmore {
-            font-size: 1.1rem;
+            font-size: $font-default;
             height: 3rem;
             width: 10rem;
             display: inline-block;
@@ -76,7 +78,7 @@
             border-radius: .3rem;
 
             @media screen and (max-width: 768px) {
-                font-size: 2rem;
+                font-size: $font-default;
                 height: 6rem;
                 width: 18rem;
             }
