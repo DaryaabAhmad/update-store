@@ -21,7 +21,8 @@
         height: auto;
         width: auto;
     }
-     &__l1 {
+
+    &__l1 {
         margin: 0 auto;
         transform: rotate(3deg);
         height: auto;
@@ -46,7 +47,7 @@
     }
 
     &__input {
-        font-size: 1.2rem;
+        font-size: $font-default-low;
         font-family: inherit;
         // color: $color-white;
         padding: 2% 7%;
@@ -81,6 +82,7 @@
 
         }
 
+        /*
         &-1 {
             height: 100%;
             width: 100%;
@@ -92,14 +94,13 @@
             padding: 0 15px;
             resize: none;
 
-        }
-
+        } */
     }
 
 
     &__label {
 
-        font-size: 1rem;
+        font-size: $font-low;
         font-weight: 700;
         margin-left: 2rem;
         margin-top: .7rem;

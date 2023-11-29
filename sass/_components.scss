@@ -1,80 +1,80 @@
 .container {
-    overflow: scroll;
-    overflow-x: hidden;
-    width: 100vw;
-    height: 90vh;
-    // padding: 3rem;
-    scroll-behavior: smooth;
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 90vh;
+	// padding: 3rem;
+	scroll-behavior: smooth;
 
 
-    @media only screen and (max-width: $bp-medium) {
-        height: 92vh;
-        padding-top: 10rem;
-    }
+	@media only screen and (max-width: $bp-medium) {
+		height: 92vh;
+		// padding-top: 10rem;
+	}
 
-    @media only screen and (max-width: $bp-small) {
-        padding-top: 7rem;
-    }
+	// @media only screen and (max-width: $bp-small) {
+	//     padding-top: 7rem;
+	// }
 
-    @media only screen and (max-width: $bp-smallest) {
-        padding-top: 4rem;
-    }
+	// @media only screen and (max-width: $bp-smallest) {
+	//     padding-top: 4rem;
+	// }
 
-    // @media (min-width: $bp-large) {
-    //     height: 90vh;
-    // }
+	// @media (min-width: $bp-large) {
+	//     height: 90vh;
+	// }
 
-    // @media (width: $bp-large) {
-    //     height: 92vh;
-    // }
+	// @media (width: $bp-large) {
+	//     height: 92vh;
+	// }
 
-    // @media (max-width: 80.0rem) {
-    //     height: 95vh;
-    // }
+	// @media (max-width: 80.0rem) {
+	//     height: 95vh;
+	// }
 
-    // @media (width: $bp-medium) {
-    //     height: 93vh;
-    // }
+	// @media (width: $bp-medium) {
+	//     height: 93vh;
+	// }
 }
 
 .content {
-
-    height: 82vh;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    background: transparent;
+	// height: 82vh;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	background: transparent;
 
 }
 
 .web-page {
-    padding: 3rem;
+	// padding: 3rem;
+	padding: .5rem;
 
-    @media screen and (min-width: $bp-smallest) and (max-width: $bp-small) {
-        height: 115rem;
-    }
+	@media screen and (min-width: $bp-smallest) and (max-width: $bp-small) {
+		height: 115rem;
+	}
 
-    // @media only screen and (max-width: $bp-small) {
-    //     height: 105rem;
-    // }
+	// @media only screen and (max-width: $bp-small) {
+	//     height: 105rem;
+	// }
 
-    // @media only screen and (max-width: $bp-small) {
-    //     height: 105rem;
-    // }
+	// @media only screen and (max-width: $bp-small) {
+	//     height: 105rem;
+	// }
 }
 
 .section-login {
-    margin: 1rem auto;
-    width: 80%;
+	margin: 1rem auto;
+	width: 80%;
 
-    &-login {
-        width: 45%;
-        margin-bottom: 10rem;
+	&-login {
+		width: 45%;
+		margin-bottom: 10rem;
 
-        @media (max-width: $bp-small) {
-            width: 80%;
-        }
-    }
+		@media (max-width: $bp-small) {
+			width: 80%;
+		}
+	}
 }
 
 
@@ -86,23 +86,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	// min-height: 100vh;
 }
-.screen {		
-	background: linear-gradient(90deg, #555555, #000000);		
-	position: relative;	
+
+.screen {
+	background: linear-gradient(90deg, #555555, #000000);
+	position: relative;
 	// height: 50rem;
-	width: 75rem;	
+	width: 75rem;
 	box-shadow: 0px 0px 24px #5C5696;
 }
 
 .screen__content {
 	z-index: 1;
-	position: relative;	
+	position: relative;
 	height: 100%;
 }
 
-.screen__background {		
+.screen__background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -110,49 +111,51 @@
 	bottom: 0;
 	z-index: 0;
 	-webkit-clip-path: inset(0 0 0 0);
-	clip-path: inset(0 0 0 0);	
+	clip-path: inset(0 0 0 0);
 }
 
-.screen__background__shape {
-	transform: rotate(45deg);
-	position: absolute;
-}
+.screen__background {
+	&__shape {
+		transform: rotate(45deg);
+		position: absolute;
+	}
 
-.screen__background__shape1 {
-	height: 520px;
-	width: 520px;
-	background: #FFF;	
-	top: -50px;
-	right: 120px;	
-	border-radius: 0 72px 0 0;
-}
+	&__shape1 {
+		height: 520px;
+		width: 520px;
+		background: #FFF;
+		top: -50px;
+		right: 120px;
+		border-radius: 0 72px 0 0;
+	}
 
-.screen__background__shape2 {
-	height: 220px;
-	width: 220px;
-	/* background: #6C63AC;	 */
-	background-color: #383737;	
-	top: -172px;
-	right: 0;	
-	border-radius: 32px;
-}
+	&__shape2 {
+		height: 220px;
+		width: 220px;
+		/* background: #6C63AC;	 */
+		background-color: #383737;
+		top: -172px;
+		right: 0;
+		border-radius: 32px;
+	}
 
-.screen__background__shape3 {
-	height: 540px;
-	width: 190px;
-	background: linear-gradient(270deg, #2a2a2b, #000000);
-	top: -24px;
-	right: 0;	
-	border-radius: 32px;
-}
+	&__shape3 {
+		height: 540px;
+		width: 190px;
+		background: linear-gradient(270deg, #2a2a2b, #000000);
+		top: -24px;
+		right: 0;
+		border-radius: 32px;
+	}
 
-.screen__background__shape4 {
-	height: 400px;
-	width: 200px;
-	background: #3b3b3b;	
-	top: 420px;
-	right: 50px;	
-	border-radius: 60px;
+	&__shape4 {
+		height: 40rem;
+		width: 20rem;
+		background: #3b3b3b;
+		top: 42rem;
+		right: 5rem;
+		border-radius: 6rem;
+	}
 }
 
 .login {
@@ -162,13 +165,13 @@
 }
 
 .login__field {
-	padding: 1px 0px;	
-	position: relative;	
+	padding: 1px 0px;
+	position: relative;
 }
 
 .login__icon {
 	position: absolute;
-	top: 30px;
+	top: 3rem;
 	color: #7875B5;
 }
 
@@ -176,8 +179,8 @@
 	border: none;
 	border-bottom: 2px solid #252525;
 	background: none;
-	padding: 10px;
- /* padding-left: 24px;  */
+	padding: 1rem;
+	/* padding-left: 24px;  */
 	font-weight: 700;
 	width: 75%;
 	transition: .2s;
@@ -193,9 +196,9 @@
 .login__submit {
 	background: #fff;
 	font-size: 14px;
-	margin-top: 30px;
-	padding: 16px 20px;
-	border-radius: 26px;
+	margin-top: 3rem;
+	padding: 1.6rem 2rem;
+	border-radius: 2.6rem;
 	border: 1px solid #D4D3E8;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -221,10 +224,10 @@
 	color: #7875B5;
 }
 
-.social-login {	
+.social-login {
 	position: absolute;
-	height: 140px;
-	width: 160px;
+	height: 8.75rem;
+	width: 10rem;
 	text-align: center;
 	bottom: 0px;
 	right: 0px;
@@ -240,11 +243,11 @@
 .social-login__icon {
 	padding: 20px 10px;
 	color: #fff;
-	text-decoration: none;	
+	text-decoration: none;
 	text-shadow: 0px 0px 8px #7875B5;
 }
 
 .social-login__icon:hover {
-	transform: scale(1.5);	
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+	transform: scale(1.5);
+	@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 }

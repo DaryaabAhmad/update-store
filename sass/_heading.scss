@@ -20,7 +20,7 @@
     // justify-content: space-between;
     // animation: moveInColor 2s ease-out;
     // animation-delay: .2s;
-
+    
     &-login {
         text-align: center;
         font-style: italic;
@@ -47,11 +47,13 @@
     }
 
 }
-.sub-header{
+
+.sub-header {
     animation: moveInBottom .7s ease-out;
     // animation:  moveInForm .7s ease;
     // animation:  moveInColore .8s ease;
 }
+
 .header {
     // font-size: 1.4rem;
     // border-bottom: var(--line);
@@ -64,7 +66,7 @@
 
     &__fix {
         list-style: none;
-        font-size: 1.4rem;
+        font-size: $font-sub-heading;
         // position: fixed;
         width: 100%;
         opacity: 999;
@@ -132,7 +134,7 @@
     }
 
     &__notification {
-        font-size: 1.1rem;
+        font-size: $font-low;
         height: 1.8rem;
         width: 1.8rem;
         border-radius: 50%;
@@ -163,7 +165,7 @@
         justify-content: center;
         align-items: center;
         padding-left: .5rem;
-        font-size: 1.6rem;
+        font-size: $font-sub-heading;
         color: $color-primary;
         animation: moveInRight 2s ease-out;
         animation-delay: .2s;
