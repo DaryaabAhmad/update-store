@@ -183,20 +183,23 @@ h2 span {
     //     width: 80rem;
     //     height: 50rem;
     // }
+    @media screen and (max-width: $bp-smallest) {
+        width: 60rem;
+        height: 40rem;
+    }
 
     @media screen and (max-width: $bp-small) {
         width: 70rem;
         height: 40rem;
     }
 
-    @media screen and (max-width: $bp-smallest) {
-        width: 60rem;
-        height: 40rem;
-    }
-
     @media screen and (max-width: $bp-medium) {
         // width: 50rem;
         height: 55rem;
+    }
+
+    @media only screen and (min-width: $bp-smallest) and (max-width: $bp-small) {
+        height: 67rem;
     }
 }
 
@@ -267,10 +270,28 @@ h2 span {
         font-size: $font-default;
         padding-bottom: 5px;
         list-style: none;
+
+        li {
+            @media only screen and (max-width: $bp-medium) {
+                font-size: $font-sub-heading;
+            }
+
+            b {
+                font-size: $font-sub-heading;
+
+                @media only screen and (max-width: $bp-medium) {
+                    font-size: $font-heading;
+                }
+            }
+        }
     }
 
     p {
         font-size: $font-low;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $font-default;
+        }
     }
 
     @media only screen and (max-width: 800px) {
@@ -676,7 +697,7 @@ h2 span {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: $font-default;
 
         // @media screen and (max-width: 768px) {
         //     font-size: 2rem;

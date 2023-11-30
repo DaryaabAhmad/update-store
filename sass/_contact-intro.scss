@@ -24,13 +24,13 @@
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: $font-sub-heading;
         color: black;
     }
 
     p {
         line-height: 1.7;
-        font-size: 1.5rem;
+        font-size: $font-sub-heading;
     }
 }
 
@@ -46,7 +46,7 @@
         place-items: center;
         text-decoration: none;
         color: #244D61;
-        font-size: 2.5rem;
+        font-size: $font-heading;
         border: 1.6px solid #244D61;
         border-radius: 50%;
         padding: 0.39rem;
@@ -63,28 +63,88 @@
             background-color: #FFFC00;
             box-shadow: 0 0 20px #FFFC00;
             transition: all .2s ease-in-out;
+            transform: scale(1.06);
             // border-radius: 50%;
 
-        } &:hover:nth-child(2) {
+        }
+
+        &:hover:nth-child(2) {
             color: #fff;
             background-color: #e1306c;
             box-shadow: 0 0 20px #e1306c;
             transition: all .2s ease-in-out;
+            transform: scale(1.06);
             // border-radius: 50%;
 
-        } &:hover:nth-child(3) {
+        }
+
+        &:hover:nth-child(3) {
             color: #fff;
             background-color: #25D366;
             box-shadow: 0 0 20px #25D366;
             transition: all .2s ease-in-out;
+            transform: scale(1.06);
             // border-radius: 50%;
 
-        } &:hover:nth-child(4) {
+        }
+
+        &:hover:nth-child(4) {
             color: #fff;
-            background-color:  #CD201F;
-            box-shadow: 0 0 20px  #CD201F;
+            background-color: #CD201F;
+            box-shadow: 0 0 20px #CD201F;
             transition: all .2s ease-in-out;
+            transform: scale(1.06);
             // border-radius: 50%;
+
+        }
+    }
+
+    &-1 {
+        a {
+
+            // github
+            &:hover:nth-child(1) {
+                color: #fff;
+                background-color: #333;
+                box-shadow: 0 0 20px #333;
+                transition: all .2s ease-in-out;
+                transform: scale(1.06);
+                // border-radius: 50%;
+
+            }
+
+            //  netlify
+            &:hover:nth-child(2) {
+                color: #fff;
+                background-color: #00b5b5;
+                box-shadow: 0 0 20px #024742;
+                transition: all .2s ease-in-out;
+                transform: scale(1.06);
+                // border-radius: 50%;
+
+            }
+
+            // facebook
+            &:hover:nth-child(3) {
+                color: #fff;
+                background-color: #4267B2;
+                box-shadow: 0 0 20px #4267B2;
+                transition: all .2s ease-in-out;
+                transform: scale(1.06);
+                // border-radius: 50%;
+
+            }
+
+            // insta
+            &:hover:nth-child(4) {
+                color: #fff;
+                background-color: #e1306c;
+                box-shadow: 0 0 20px #e1306c;
+                transition: all .2s ease-in-out;
+                transform: scale(1.06);
+                // border-radius: 50%;
+
+            }
 
         }
     }
@@ -124,7 +184,7 @@
 
     .menu {
         display: block;
-        font-size: 1.5rem;
+        font-size: $font-sub-heading;
         font-weight: bold;
         color: #244D61;
     }

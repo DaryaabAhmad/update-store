@@ -83,7 +83,7 @@
 // }
 
 .topic {
-    font-size: 18px;
+    font-size: $font-default;
     font-weight: 500;
     color: rgba($color-heading, 1);
 
@@ -91,7 +91,7 @@
 
 .text-one,
 .text-two {
-    font-size: 1.4rem;
+    font-size: $font-sub-heading;
     color: rgba($color-heading, .753);
     // width: 120%;
 }
@@ -116,9 +116,10 @@
 }
 
 .topic-text {
-    font-size: 23px;
+    font-size: $font-heading;
     font-weight: 600;
-    color: #3e2093;
+    // color: #3e2093;
+    color: $color-contact;
 }
 
 .input-box {

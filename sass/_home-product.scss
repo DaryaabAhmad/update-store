@@ -59,7 +59,8 @@
         flex-shrink: 0;
         min-width: 100%;
         min-height: 100%;
-        &:hover{
+
+        &:hover {
             transform: scale(.853);
             transition: all .3s;
         }
@@ -230,7 +231,7 @@
 
 
     span {
-        font-size: 1.2rem;
+        font-size: $font-default;
         letter-spacing: 1px;
         text-transform: uppercase;
         text-decoration: none;
@@ -239,13 +240,13 @@
 
     h1 {
         font-weight: 300;
-        font-size: 5.2rem;
+        font-size: $font-heading-extra;
         color: #43484D;
         letter-spacing: -2px;
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: $font-default;
         font-weight: 300;
         color: #86939E;
         line-height: 2.4rem;
@@ -261,7 +262,7 @@
 /* Product Configuration */
 .product-color span,
 .cable-config span {
-    font-size: 1.4rem;
+    font-size: $font-default;
     font-weight: 400;
     color: #86939E;
     margin-bottom: 2rem;
@@ -317,25 +318,27 @@
 /* Cable Configuration */
 .cable-choose {
     margin-bottom: 2rem;
+
+    button {
+        border: 2px solid #E1E8EE;
+        border-radius: 6px;
+        padding: 1.3rem 2rem;
+        font-size: $font-default;
+        color: #5E6977;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border: 2px solid #86939E;
+            outline: none;
+        }
+    }
 }
 
-.cable-choose button {
-    border: 2px solid #E1E8EE;
-    border-radius: 6px;
-    padding: 1.3rem 2rem;
-    font-size: 1.4rem;
-    color: #5E6977;
-    background-color: #fff;
-    cursor: pointer;
-    transition: all .5s;
-}
 
-.cable-choose button:hover,
-.cable-choose button:active,
-.cable-choose button:focus {
-    border: 2px solid #86939E;
-    outline: none;
-}
 
 .cable-config {
     border-bottom: 1px solid #E1E8EE;
