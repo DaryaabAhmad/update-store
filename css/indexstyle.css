@@ -70,7 +70,9 @@ body {
 
 .section-login {
   margin: 1rem auto;
-  width: 80%; }
+  width: 100%;
+  height: 100%;
+  background: red; }
   .section-login-login {
     width: 45%;
     margin-bottom: 10rem; }
@@ -86,12 +88,16 @@ body {
 .screen {
   background: linear-gradient(90deg, #555555, #000000);
   position: relative;
-  width: 75rem;
-  box-shadow: 0px 0px 24px #5C5696; }
+  height: 100%;
+  width: 100%; }
   .screen__content {
     z-index: 1;
     position: relative;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .screen__background {
     position: absolute;
     top: 0;
@@ -137,6 +143,9 @@ body {
 .login {
   width: 45rem;
   padding: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .login {
+      width: 80%; } }
 
 .social-login {
   position: absolute;
@@ -163,6 +172,57 @@ body {
   align-items: center;
   justify-content: center; }
 
+.mainside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
+
+.submainside {
+  min-height: 95vh;
+  width: 95vw;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sectionside {
+  width: 93vw;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background: transparent;
+  justify-content: center;
+  align-items: center; }
+
+.pic {
+  width: 50%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .pic {
+      display: none; } }
+  .pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; }
+
+.data {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .data {
+      width: 90%; } }
+
 .heading-login {
   text-align: center;
   font-style: italic;
@@ -170,16 +230,16 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), #000);
+  color: #000;
+  text-shadow: 3px 3px 7px #FFFFFF;
   -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
   width: 100%;
   padding: 1rem 0; }
   .heading-login:hover {
     transform: translateY(2px);
-    text-shadow: 0.5rem 0.5rem 2.5rem rgba(0, 0, 0, 0.2); }
+    text-shadow: 0.5rem 0.5rem 2.5rem rgba(255, 255, 255, 0.573); }
 
 .sub-header {
   animation: moveInBottom .7s ease-out; }
@@ -393,7 +453,8 @@ body {
   font-size: 1.5rem;
   color: #000;
   text-align: center;
-  padding: .5rem 1rem; }
+  padding: .5rem 1rem;
+  text-shadow: 0.5rem 0.5rem 2.5rem #FFFFFF; }
   .l-1__1 {
     font-size: 1rem;
     color: #000;
@@ -591,7 +652,7 @@ body {
       border: none;
       outline: none;
       font-size: 16px;
-      background: #ffffff;
+      background: #FFFFFF;
       border-radius: 1rem;
       padding: 0 15px;
       resize: none; }
@@ -642,7 +703,6 @@ body {
   height: 5rem;
   width: 15rem;
   margin: .5rem auto;
-  margin-bottom: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   border-radius: 1rem;
