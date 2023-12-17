@@ -236,13 +236,18 @@
 }
 
 .submainside {
-	min-height: 95vh;
+	height: 95vh;
 	width: 95vw;
 	background-color: transparent;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media only screen and (max-width: $bp-small) {
+		height: 110rem;
+	}
+
 }
 
 .sectionside {
