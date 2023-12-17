@@ -157,6 +157,11 @@
             background-color: $color-black;
             color: white;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            top: 1.5rem;
+            right: 0.2rem;
+        }
     }
 
     &__user-photo {
