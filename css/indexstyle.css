@@ -204,7 +204,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .sectionside {
-      max-height: 70%; } }
+      max-height: 80%; } }
 
 .pic {
   width: 50%;
