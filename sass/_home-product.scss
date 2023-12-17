@@ -20,6 +20,9 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
+    @media only screen and (max-width: $bp-small) {
+		height: 50vh;
+	}
 }
 
 .content-wrapper {
@@ -31,6 +34,9 @@
     input {
         display: none;
     }
+    @media only screen and (max-width: $bp-small) {
+		min-height: 47vh;
+	}
 }
 
 /* #section-2, */

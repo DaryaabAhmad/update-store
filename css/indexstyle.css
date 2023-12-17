@@ -1140,6 +1140,9 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw; }
+  @media only screen and (max-width: 37.5em) {
+    .page-wrapper {
+      height: 50vh; } }
 
 .content-wrapper {
   display: flex;
@@ -1148,6 +1151,9 @@ body {
   position: relative; }
   .content-wrapper input {
     display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .content-wrapper {
+      min-height: 47vh; } }
 
 /* #section-2, */
 #section-1 {
