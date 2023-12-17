@@ -152,6 +152,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            background-color: $color-black;
+            color: white;
+        }
     }
 
     &__user-photo {

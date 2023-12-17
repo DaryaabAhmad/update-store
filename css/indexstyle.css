@@ -293,7 +293,7 @@ body {
     height: 1.8rem;
     width: 1.8rem;
     border-radius: 50%;
-    background: rgba(255, 0, 0, 0.753);
+    background: rgba(177, 177, 177, 0.753);
     color: #000;
     position: absolute;
     top: .7rem;
@@ -302,6 +302,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .user-nav__notification:hover {
+      background-color: #000;
+      color: white; }
   .user-nav__user-photo {
     height: 4rem;
     border-radius: 50%;
@@ -455,6 +458,11 @@ body {
   text-align: center;
   padding: .5rem 1rem;
   text-shadow: 0.5rem 0.5rem 2.5rem #FFFFFF; }
+  .l-1 a {
+    font-size: 1.5rem;
+    color: #000; }
+    .l-1 a:hover {
+      color: #b1b1b1; }
   .l-1__1 {
     font-size: 1rem;
     color: #000;
@@ -464,6 +472,11 @@ body {
     .l-1__1:hover {
       transform: translateY(0.7px);
       transition: all .1s; }
+    .l-1__1 a {
+      font-size: 1rem;
+      color: #000; }
+      .l-1__1 a:hover {
+        color: #b1b1b1; }
 
 .form {
   background: rgba(255, 255, 255, 0.9);
@@ -635,7 +648,7 @@ body {
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-      border-bottom: 3px solid #ff0000;
+      border-bottom: 3px solid #b1b1b1;
       transform: skewY(0deg) skewX(0deg) scale(1.02);
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2); }
     .form__input:focus:invalid {
@@ -857,7 +870,7 @@ body {
     font-weight: 600;
     color: black; }
     .main h1 span {
-      color: #ff0000; }
+      color: #b1b1b1; }
   .main h3 {
     font-size: 1.5rem;
     color: black; }
@@ -1653,13 +1666,13 @@ h2 span {
     .card-2__side--back {
       transform: rotateY(-180deg); }
       .card-2__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ff0000, #000); }
+        background-image: linear-gradient(to right bottom, #b1b1b1, #000); }
       .card-2__side--back-2 {
         background-image: linear-gradient(to right bottom, #000, #FFFFFF); }
       .card-2__side--back-3 {
         background-image: linear-gradient(to right bottom, #FFFFFF, #000); }
       .card-2__side--back-4 {
-        background-image: linear-gradient(to right bottom, #ff0000, #000); }
+        background-image: linear-gradient(to right bottom, #b1b1b1, #000); }
   .card-2:hover .card-2__side--front {
     transform: rotateY(180deg); }
   .card-2:hover .card-2__side--back {
@@ -2097,7 +2110,7 @@ footer {
 
 .l__link:hover,
 .l__link:active {
-  color: #ff0000;
+  color: #b1b1b1;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   transform: rotate(5deg) scale(1.3); }
 

@@ -78,6 +78,14 @@
     padding: .5rem 1rem;
     text-shadow: .5rem .5rem 2.5rem $color-white;
 
+    a {
+        font-size: $font-sub-heading;
+        color: $color-black;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
 
     &__1 {
         font-size: $font-default-low;
@@ -90,6 +98,15 @@
         &:hover {
             transform: translateY(.7px);
             transition: all .1s;
+        }
+
+        a {
+            font-size: $font-default-low;
+            color: $color-black;
+
+            &:hover {
+                color: $color-secondary;
+            }
         }
 
     }
